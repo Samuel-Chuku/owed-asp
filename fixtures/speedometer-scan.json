@@ -1,0 +1,6209 @@
+{
+  "scanId": "8c9c6e51-7c41-4806-a9d9-9a0690719063",
+  "artist": {
+    "queryName": "Shallipopi",
+    "resolvedName": "Shallipopi",
+    "aliases": [
+      "Crown Uzama",
+      "Shallipopi"
+    ],
+    "mbid": "faea091e-7b38-471f-b5a2-68ba6929cdaa",
+    "tracks": [
+      {
+        "title": "ROCKSTAR",
+        "isrcs": [
+          "GBARL2501835"
+        ],
+        "streams": []
+      },
+      {
+        "title": "OPEUHH",
+        "isrcs": [
+          "GBARL2501830"
+        ],
+        "streams": []
+      },
+      {
+        "title": "NEW CAT",
+        "isrcs": [
+          "USA2P2418925"
+        ],
+        "streams": []
+      },
+      {
+        "title": "BENIN BOYS",
+        "isrcs": [
+          "NGUM72400001"
+        ],
+        "streams": []
+      },
+      {
+        "title": "MORE THAN ME",
+        "isrcs": [
+          "USA2P2354214"
+        ],
+        "streams": []
+      },
+      {
+        "title": "EVIL RECEIVE",
+        "isrcs": [
+          "USA2P2354051"
+        ],
+        "streams": []
+      },
+      {
+        "title": "CAST",
+        "isrcs": [
+          "USA2P2354213"
+        ],
+        "streams": []
+      },
+      {
+        "title": "TURNER",
+        "isrcs": [
+          "GBARL2501825"
+        ],
+        "streams": []
+      },
+      {
+        "title": "PULL UP",
+        "isrcs": [
+          "GBARL2501832"
+        ],
+        "streams": []
+      },
+      {
+        "title": "JESERAWA",
+        "isrcs": [
+          "QZNJZ2587151"
+        ],
+        "streams": []
+      },
+      {
+        "title": "SO WHAT?",
+        "isrcs": [
+          "ZA56E2304852"
+        ],
+        "streams": []
+      },
+      {
+        "title": "AURA",
+        "isrcs": [
+          "GBARL2501833"
+        ],
+        "streams": []
+      },
+      {
+        "title": "LUDO",
+        "isrcs": [
+          "QZWA32200680"
+        ],
+        "streams": []
+      },
+      {
+        "title": "WET ON ME",
+        "isrcs": [
+          "USA2P2354216"
+        ],
+        "streams": []
+      },
+      {
+        "title": "AFA RELAX OO",
+        "isrcs": [
+          "GBARL2500973"
+        ],
+        "streams": []
+      },
+      {
+        "title": "ZAAZAA",
+        "isrcs": [
+          "NLG662500171"
+        ],
+        "streams": []
+      },
+      {
+        "title": "GBEFUN (FINE SHIT)",
+        "isrcs": [
+          "GBARL2501827"
+        ],
+        "streams": []
+      },
+      {
+        "title": "JONZE",
+        "isrcs": [
+          "USA2P2354220"
+        ],
+        "streams": []
+      },
+      {
+        "title": "LAHO III",
+        "isrcs": [
+          "GBARL2501015"
+        ],
+        "streams": []
+      },
+      {
+        "title": "EYO",
+        "isrcs": [
+          "GBARL2501826"
+        ],
+        "streams": []
+      },
+      {
+        "title": "FIND ME",
+        "isrcs": [
+          "USA2P2418924"
+        ],
+        "streams": []
+      },
+      {
+        "title": "NEVER EVER",
+        "isrcs": [
+          "USA2P2354212"
+        ],
+        "streams": []
+      },
+      {
+        "title": "CAUTION (HOLD SOMETHING)",
+        "isrcs": [
+          "GBARL2501834"
+        ],
+        "streams": []
+      },
+      {
+        "title": "SEARCHING 4 ME",
+        "isrcs": [
+          "GBARL2501836"
+        ],
+        "streams": []
+      },
+      {
+        "title": "LOADED",
+        "isrcs": [
+          "GBARL2501838"
+        ],
+        "streams": []
+      }
+    ],
+    "disambiguation": {
+      "candidates": [
+        "Shallipopi (Afrobeat Artist from Nigeria)",
+        "DripFace"
+      ],
+      "confidence": "high",
+      "notes": "Afrobeat Artist from Nigeria"
+    }
+  },
+  "works": [
+    {
+      "title": "NEW CAT",
+      "mlcSongCode": "N742BZ",
+      "writers": [
+        {
+          "name": "CROWN UZAMA",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "OYADA AGADA",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "CROWN UZAMA",
+          "ipi": "01225495454",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SINCE '94 PUBLISHING SERVICES LIMITED",
+          "ipi": "01181560564",
+          "collectionShare": 50,
+          "representedWriters": [
+            "CROWN UZAMA",
+            "CROWN UZAMA"
+          ]
+        }
+      ],
+      "totalShares": 50,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "applemusic",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "youtube",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "soundcloud",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "beatport",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "tidal",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "pandora",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "deezer",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "trebel",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418922",
+          "dsp": "iheartradio",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "iheartradio",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "qobuz",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "isrc": "USA2P2418925",
+          "dsp": "gtl",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "NEW CAT",
+          "dsp": "audiomack"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/984723122",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705990947_search_new-cat_p0.json",
+      "fetchedAt": "2026-07-10T22:02:13.265Z"
+    },
+    {
+      "title": "BENIN BOYS",
+      "mlcSongCode": "BE2Z6A",
+      "iswc": "T3264063750",
+      "writers": [
+        {
+          "name": "PRINCE AGADA",
+          "ipi": "01246489230",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "DIVINE IKUBOR",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "UZAMA CROWN",
+          "ipi": "01225495356",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "MAVIN GLOBAL HOLDINGS LIMITED",
+          "ipi": "01003448899",
+          "collectionShare": 45,
+          "representedWriters": [
+            "DIVINE IKUBOR"
+          ]
+        },
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 40,
+          "representedWriters": []
+        },
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 15,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "spotify",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "spotify",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "youtube",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "youtube",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "soundcloud",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "audiomack",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "beatport",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "ADEKUNLE GOLD SHALLIPOPI REMA KEL-P LADIPOE",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "pandora",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "deezer",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "AYRA STARR",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "spotify",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ZERRYDL",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "AYRA STARR",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "pandora",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "DJ YK BEATS",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA WIZKID",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "deezer",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "trebel",
+          "label": "UMG GLOBAL"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "beatport",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "melodyvr",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "THE THERAPIST SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGA5T2413889",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ASAPTHEDJ",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ADEKUNLE GOLD",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "FALZ",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA|SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "pandora",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "CHRIS BROWN",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "youtube",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "SHALLIPOPI TRAVIS SCOTT REMA ASAKE",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA;SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "securustechnologies",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400005",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "melodyvr",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "CENTRAL CEE ASAKE",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "spotify",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "midwesttape",
+          "label": "MAVIN GLOBAL HOLDINGS LTD / JONZING WORLD ENTERTAINMENT"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA BURNA BOY",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI TML VIBEZ REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI SEAN PAUL REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "CENTRAL CEE ASAKE",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SMUR LEE ODUMODUBLVCK",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "soundcloud",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "RÉMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "qobuz",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "RÉMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "qobuz",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "trebel",
+          "label": "UMG GLOBAL"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "GESAFFELSTEIN",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "melodyvr",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "iheartradio",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA;SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "securustechnologies",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA;SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "gtl",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "tidal",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "trebel",
+          "label": "UMG GLOBAL"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "RÉMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "qobuz",
+          "label": "VIRGIN MUSIC UK LAS (S&D)"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI VIBEKULTURE SA REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI|REMA",
+          "title": "BENIN BOYS (MIXED)",
+          "isrc": "USA2P2523486",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "tidal",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "beatport",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "OLAMIDE",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "beatport",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "midwesttape",
+          "label": "MAVIN GLOBAL HOLDINGS LTD / JONZING WORLD ENTERTAINMENT"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "beatport",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA;SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "gtl",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "rythm",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "trebel",
+          "label": "UMG GLOBAL"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "iheartradio",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI REMA T-PAIN",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "iheartradio",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "jiosaavn",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "youtube",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "REMA;SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "gtl",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA,SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "deezer",
+          "label": "UNIVERSAL MUSIC INTERNATIONAL COMPANY LIMITED"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA & SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUV72400001",
+          "dsp": "tidal",
+          "label": "MAVIN GLOBAL HOLDINGS LTD"
+        },
+        {
+          "artist": "SHALLIPOPI|REMA",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "pandora",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "USA2P2523486",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA,SHALIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGA5T2413889",
+          "dsp": "spotify",
+          "label": "D'FLAMZ"
+        },
+        {
+          "artist": "REMA FEATURING SHALIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGA5T2413889",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "REMA FEATURING SHALIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGA5T2413889",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "REMA FEATURING SHALIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGA5T2413889",
+          "dsp": "tidal",
+          "label": "D'FLAMZ"
+        },
+        {
+          "artist": "REMA, SHALLIPOPI",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "turntable"
+        },
+        {
+          "artist": "REMA",
+          "title": "BENIN BOYS",
+          "isrc": "NGUM72400001",
+          "dsp": "turntable"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/991687380",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705993912_search_benin-boys_p0.json",
+      "fetchedAt": "2026-07-10T22:02:13.268Z"
+    },
+    {
+      "title": "EVIL RECEIVE",
+      "mlcSongCode": "EC4ZJH",
+      "iswc": "T3259413844",
+      "writers": [
+        {
+          "name": "CROWN UZAMAH",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "PRINCE AGADA",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 50,
+          "representedWriters": [
+            "PRINCE AGADA",
+            "CROWN UZAMAH"
+          ]
+        },
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 50,
+          "representedWriters": [
+            "PRINCE AGADA",
+            "CROWN UZAMAH"
+          ]
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "audiomack",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "youtube",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "youtube",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "soundcloud",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "dsp": "boomplay",
+          "label": "DVPPER MUSIC"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "tidal",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SARZ SKRILLEX CRAYON",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "TCAHP2357767",
+          "dsp": "youtube",
+          "label": "SHALLIPOPI"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "dsp": "boomplay",
+          "label": "DVPPER MUSIC"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "beatport",
+          "label": "DVPPER"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "deezer",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE SPEED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "tidal",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "pandora",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "deezer",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "TEKNO",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (MIXED)",
+          "isrc": "QZZ972341847",
+          "dsp": "boomplay",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "trebel",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "youtube",
+          "label": "INTERSPACE MUSIC GROUP"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "melodyvr",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE SPED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "pandora",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "rythm",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "boomplay",
+          "label": "INTERSPACE MUSIC GROUP"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "trebel",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (APALA) (MIXED)",
+          "isrc": "QZZ972440601",
+          "dsp": "boomplay",
+          "label": "GROOVE411"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "qobuz",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "beatport",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "tidal"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "midwesttape",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "melodyvr",
+          "label": "INTERSPACE MUSIC GROUP"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "iheartradio",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (APALA)",
+          "isrc": "QZZ972440601",
+          "dsp": "amazonmusic",
+          "label": "LA CUPULA"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (APALA)",
+          "isrc": "QZZ972440601",
+          "dsp": "youtube",
+          "label": "GROOVE411"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972341847",
+          "dsp": "amazonmusic",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "soundcloud",
+          "label": "INTERSPACE MUSIC GROUP"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE REMIX",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "qobuz",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972341847",
+          "dsp": "youtube",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "melodyvr",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972347217",
+          "dsp": "amazonmusic",
+          "label": "LA CUPULA"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972341847",
+          "dsp": "tidal"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "02 SHALLIPOPI EVIL RECEIVE",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "USA2P2354051",
+          "dsp": "iheartradio",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE",
+          "isrc": "QZZ972341847",
+          "dsp": "soundcloud",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (APALA)",
+          "isrc": "QZZ972440601",
+          "dsp": "tidal"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE (APALA)",
+          "isrc": "QZZ972440601",
+          "dsp": "soundcloud",
+          "label": "GROOVE411"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "EVIL RECEIVE SPEEDUP",
+          "dsp": "audiomack"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/968456920",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705999890_search_evil-receive_p0.json",
+      "fetchedAt": "2026-07-10T22:02:13.269Z"
+    },
+    {
+      "title": "JESERAWA",
+      "mlcSongCode": "J57BCA",
+      "writers": [
+        {
+          "name": "VALENTINE ANIKWENZE",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SONGS OF ELIZABETH MUSIC GROUP",
+          "ipi": "01306891250",
+          "collectionShare": 5,
+          "representedWriters": []
+        },
+        {
+          "name": "AFRO SOUNDTRACK LLC",
+          "ipi": "01243096175",
+          "collectionShare": 35,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 40,
+      "matchedRecordings": [
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA (FEAT. SHALLIPOPI, TERRYTHEVOICE & IDOWEST)",
+          "isrc": "QZNJZ2587151",
+          "dsp": "applemusic",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "ZLATAN,SHALLIPOPI,TERRYTHEVOICE,IDOWEST",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "spotify",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "youtube",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "soundcloud",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "amazonmusic",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "pandora",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "IDOWEST,SHALLIPOPI,TERRYTHEVOICE,ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "beatport",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "deezer",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        },
+        {
+          "artist": "ZLATAN, IDOWEST",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "trebel",
+          "label": "ONERPM"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "QZNJZ2587151",
+          "dsp": "iheartradio"
+        },
+        {
+          "artist": "ZLATAN",
+          "title": "JESERAWA",
+          "isrc": "QZNJZ2587151",
+          "dsp": "qobuz",
+          "label": "ZANKU RECORDS, UNDER EXCLUSIVE LICENSE TO ONERPM"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/1068765689",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720888077_search_jeserawa_p0.json",
+      "fetchedAt": "2026-07-10T22:02:16.052Z"
+    },
+    {
+      "title": "LUDO",
+      "mlcSongCode": "LS2IWW",
+      "writers": [
+        {
+          "name": "RICHARD ISONG OLOWARANTI MBU ISONG",
+          "ipi": "00616695618",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "ANTHONY VICTOR",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "AVEX USA HITS",
+          "ipi": "01127117099",
+          "collectionShare": 30,
+          "representedWriters": [
+            "ANTHONY VICTOR"
+          ]
+        },
+        {
+          "name": "WARNER CHAPPELL MUSIC LTD",
+          "ipi": "00160187388",
+          "collectionShare": 50,
+          "representedWriters": [
+            "RICHARD ISONG OLOWARANTI MBU ISONG"
+          ]
+        }
+      ],
+      "totalShares": 80,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI|VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY,SHALLIPOPI",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "spotify",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "youtube",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY|SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY AND SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "VICTONY,SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "spotify",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "youtube",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BNXN",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "soundcloud",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY AND SHALLIPOPI",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "amazonmusic",
+          "label": "ENCORE RECORDINGS LLC"
+        },
+        {
+          "artist": "SHALLIPOPI,VICTONY,VICTONY AND SHALLIPOPI",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "beatport",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY AND SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI|VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "pandora",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "NASBOI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "OLAMIDE",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY & SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "amazonmusic",
+          "label": "THE ORCHARD"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI,VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "deezer",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY|SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "pandora",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI,VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "deezer",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "qobuz",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "qobuz",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY & SHALLIPOPI",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "tidal",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "melodyvr",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO (WITH SHALLIPOPI)",
+          "isrc": "QZWA32200680",
+          "dsp": "boomplay",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY SHALLIPOPI",
+          "title": "LUDO",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI|VICTONY",
+          "title": "LUDO",
+          "isrc": "QZWA32200680",
+          "dsp": "applemusic",
+          "label": "ENCORE RECORDINGS"
+        },
+        {
+          "artist": "VICTONY",
+          "title": "LUDO",
+          "dsp": "audiomack"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/989819428",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720897258_search_ludo_p0.json",
+      "fetchedAt": "2026-07-10T22:02:19.114Z"
+    },
+    {
+      "title": "WET ON ME",
+      "mlcSongCode": "WC0N86",
+      "writers": [
+        {
+          "name": "CROWN UZAMAH",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "DIVINE UZAMA",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "SAHEEB HAHEEB",
+          "ipi": "01219346165",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 40,
+          "representedWriters": [
+            "CROWN UZAMAH"
+          ]
+        },
+        {
+          "name": "SINCE '94 PUBLISHING SERVICES LIMITED",
+          "ipi": "01181560564",
+          "collectionShare": 10,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 50,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI,ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "youtube",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI FEAT. ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "soundcloud",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME FT. ZERRY DL",
+          "dsp": "boomplay",
+          "label": "DVPPER MUSIC"
+        },
+        {
+          "artist": "SHALLIPOPI FEAT. ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "tidal",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI,ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI FEAT. ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "pandora",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME SPEED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "deezer",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI,ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "beatport",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "DJ YK BEATS",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (MIXED) FT. ZERRYDL",
+          "isrc": "QZZ972342311",
+          "dsp": "boomplay",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI FEAT. ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI FEATURING ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "tidal"
+        },
+        {
+          "artist": "KIZZ DANIEL",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME (FEAT. ZERRYDL)",
+          "isrc": "USA2P2354216",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI FEATURING ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "tidal"
+        },
+        {
+          "artist": "SHALLIPOPI ZERRYDI",
+          "title": "WET ON ME SPED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI, ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "trebel",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI ZERRYDL",
+          "title": "WET ON ME REMIX",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI FEATURING ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "amazonmusic",
+          "label": "LA CUPULA"
+        },
+        {
+          "artist": "SHALLIPOPI FEATURING ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "amazonmusic",
+          "label": "LA CUPULA"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "youtube",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI FEATURING ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "soundcloud",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "melodyvr",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "07 SHALLIPOPI WET ON ME FEAT ZERRYDL",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI FT ZERRY DL",
+          "title": "WET ON ME TIKTOK SPEED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "qobuz",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "midwesttape",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI, ZERRYDL",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "iheartradio",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME YANGE VERSE",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "USA2P2354216",
+          "dsp": "melodyvr",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME",
+          "isrc": "QZZ972342311",
+          "dsp": "deezer",
+          "label": "INTERSPACE SOUND SYSTEM"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "WET ON ME SPED UP",
+          "dsp": "audiomack"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/968466532",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json",
+      "fetchedAt": "2026-07-10T22:02:22.071Z"
+    },
+    {
+      "title": "ZAAZAA",
+      "mlcSongCode": "ZR7I5N",
+      "iswc": "T3319632407",
+      "writers": [
+        {
+          "name": "UZAMA CROWN",
+          "ipi": "01225495356",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "TEVIN I PLAATE",
+          "ipi": "00584851313",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "NATHANIEL TOTIMEH",
+          "ipi": "01283186048",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "ELISHA AMONOO NEIZER",
+          "ipi": "00867126415",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "KASPAR LUCAS SAHAND JALILY",
+          "ipi": "00879110222",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "FRANCIS EDUSEI",
+          "ipi": "00774820907",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "DYVANCHO WEVER",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "UNIVERSAL MUSIC PUBL. B.V.",
+          "ipi": "00209312104",
+          "collectionShare": 6.4,
+          "representedWriters": [
+            "FRANCIS EDUSEI",
+            "FRANCIS EDUSEI"
+          ]
+        },
+        {
+          "name": "STRAIGHT SHOOTER PUBLISHING",
+          "ipi": "00376000485",
+          "collectionShare": 9.6,
+          "representedWriters": [
+            "FRANCIS EDUSEI",
+            "FRANCIS EDUSEI"
+          ]
+        },
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 15,
+          "representedWriters": []
+        },
+        {
+          "name": "DEJA VU PUBLISHING",
+          "collectionShare": 16,
+          "representedWriters": [
+            "TEVIN I PLAATE"
+          ]
+        },
+        {
+          "name": "Original Global Branding Management and Distribution LLC",
+          "collectionShare": 44,
+          "representedWriters": []
+        },
+        {
+          "name": "CLOUD 9 HOLLAND MUSIC PUB",
+          "ipi": "00466551142",
+          "collectionShare": 9,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI,NOA",
+          "title": "ZAAZAA - NOA REMIX",
+          "isrc": "NLG662500321",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI,NOA",
+          "title": "ZAAZAA - NOA REMIX",
+          "isrc": "NLG662500321",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI,GINO LE NOIR",
+          "title": "ZAAZAA - GINO LE NOIR REMIX",
+          "isrc": "NLG662500322",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "soundcloud",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500321",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI,GINO LE NOIR",
+          "title": "ZAAZAA - GINO LE NOIR REMIX",
+          "isrc": "NLG662500322",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "audiomack",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,KISH",
+          "title": "ZAAZAA - KISH REMIX",
+          "isrc": "NLG662500497",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500322",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500498",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500435",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,ELIKIA",
+          "title": "ZAAZAA - ELIKIA REMIX",
+          "isrc": "NLG662500498",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500497",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (HOOK)",
+          "isrc": "NLG662500227",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "REIS FERNANDO|FRENNA|ARTEM",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500502",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,REIS FERNANDO,ARTEM",
+          "title": "ZAAZAA - REIS FERNANDO X ARTEM REMIX",
+          "isrc": "NLG662500502",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "soundcloud",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,PEARL RAMOS,JANICE FIERCE",
+          "title": "ZAAZAA - PEARL RAMOS & JANICE FIERCE REMIX",
+          "isrc": "NLG662500500",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500502",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "USA2P2562911",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA|ELIKIA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500498",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA - INSTRUMENTAL",
+          "isrc": "NLG662500435",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,FISSA UNITED",
+          "title": "ZAAZAA - FISSA UNITED REMIX",
+          "isrc": "NLG662500501",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "KISH|FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500497",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500435",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "qobuz",
+          "label": "777 RECORDS BV - TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500435",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500435",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500321",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,2MOCHH",
+          "title": "ZAAZAA - 2MOCHH REMIX",
+          "isrc": "NLG662500499",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "beatport",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "qobuz",
+          "label": "777 RECORDS BV - TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "soundcloud",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "melodyvr",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,FAB!O",
+          "title": "ZAAZAA - FAB!O REMIX",
+          "isrc": "NLG662500503",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA SHALLIPOPI",
+          "title": "ZAAZAA NOA REMIX",
+          "isrc": "NLG662500321",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA, SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "trebel",
+          "label": "UMG GLOBAL"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500500",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "UME - GLOBAL CLEARING HOUSE"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500499",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500501",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA|FABO",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500503",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500322",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500435",
+          "dsp": "pandora",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "spotify",
+          "label": "UME - GLOBAL CLEARING HOUSE"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500503",
+          "dsp": "youtube",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "2MOCHH|FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500499",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "PEARL RAMOS|FRENNA|JANICE FIERCE",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500500",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500435",
+          "dsp": "soundcloud",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "NLG662500171",
+          "dsp": "deezer"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500322",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA,SHALLIPOPI",
+          "title": "ZAAZAA - INSTRUMENTAL",
+          "isrc": "NLG662500435",
+          "dsp": "spotify",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA SHALLIPOPI",
+          "title": "ZAAZAA INSTRUMENTAL",
+          "isrc": "NLG662500435",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500321",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500321",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (2MOCHH REMIX)",
+          "isrc": "NLG662500499",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500322",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "UME - GLOBAL CLEARING HOUSE"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA (GINO LE NOIR REMIX) [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500322",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FEAT. SHALLIPOPI)",
+          "isrc": "NLG662500171",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & REIS FERNANDO & ARTEM",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500502",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA (FAB!O REMIX)",
+          "isrc": "NLG662500503",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA SHALLIPOPI",
+          "title": "ZAAZAA GINO LE NOIR REMIX",
+          "isrc": "NLG662500322",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "deezer",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FISSA UNITED|FRENNA",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500501",
+          "dsp": "applemusic",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500171",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA & SHALLIPOPI",
+          "title": "ZAAZAA (NOA REMIX) [FEAT. SHALLIPOPI]",
+          "isrc": "NLG662500321",
+          "dsp": "amazonmusic",
+          "label": "UNIVERSAL MUSIC GROUP GLOBAL"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "777 RECORDS BV / TOP NOTCH MUSIC BV"
+        },
+        {
+          "artist": "FRENNA FEAT. SHALLIPOPI",
+          "title": "ZAAZAA",
+          "isrc": "NLG662500171",
+          "dsp": "tidal",
+          "label": "UME - GLOBAL CLEARING HOUSE"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/1043145398",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json",
+      "fetchedAt": "2026-07-10T22:02:31.104Z"
+    },
+    {
+      "title": "JONZE",
+      "mlcSongCode": "JC2UPS",
+      "iswc": "T3246857096",
+      "writers": [
+        {
+          "name": "SAHEEB HAHEEB",
+          "ipi": "01219346165",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "CROWN UZAMAH",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 50,
+          "representedWriters": [
+            "CROWN UZAMAH"
+          ]
+        },
+        {
+          "name": "SINCE '94 PUBLISHING SERVICES LIMITED",
+          "ipi": "01181560564",
+          "collectionShare": 50,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "applemusic",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "spotify",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "youtube",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "dsp": "boomplay",
+          "label": "DVPPER MUSIC"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "tidal",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "soundcloud",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "TCAHQ2317350",
+          "dsp": "youtube",
+          "label": "SHALLIPOPI"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "deezer",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "pandora",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE SPEED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "beatport",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "trebel",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE SPED UP",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "iheartradio",
+          "label": "DVPPER"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "melodyvr",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE",
+          "isrc": "USA2P2354220",
+          "dsp": "midwesttape",
+          "label": "DVPPER DIGITAL"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "12 SHALLIPOPI JONZE",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "JONZE SPEED UP",
+          "dsp": "audiomack"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/968466249",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720912360_search_jonze_p0.json",
+      "fetchedAt": "2026-07-10T22:02:34.060Z"
+    },
+    {
+      "title": "LAHO III",
+      "mlcSongCode": "LS7VBT",
+      "writers": [
+        {
+          "name": "EREDORO PROGRESS",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "JORGE PIZARRO",
+          "ipi": "00369239621",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "GERARDO DANNER",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "CROWN UZAMAH",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "RAUL ALEJANDRO OCASIO",
+          "ipi": "00753490821",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "NINO KARLO SEGARRA",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "ISLA ESTRELLA PUBLISHING",
+          "collectionShare": 8,
+          "representedWriters": [
+            "NINO KARLO SEGARRA"
+          ]
+        },
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 33.5,
+          "representedWriters": [
+            "CROWN UZAMAH",
+            "CROWN UZAMAH"
+          ]
+        },
+        {
+          "name": "Original Global Branding Management and Distribution LLC",
+          "collectionShare": 50,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 91.5,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI|RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "youtube",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI & RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "RAUW ALEJANDRO|SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI|RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI & RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI, RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "soundcloud",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "RAUW ALEJANDRO|SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI & RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "RAUW ALEJANDRO,SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "audiomack",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2501015",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI;RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "securustechnologies",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "RAUW ALEJANDRO,SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "qobuz",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "melodyvr",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,RAUW ALEJANDRO",
+          "title": "LAHO III",
+          "isrc": "GBARL2501015",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2501015",
+          "dsp": "qobuz"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2501015",
+          "dsp": "deezer"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/1053634325",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json",
+      "fetchedAt": "2026-07-10T22:02:37.070Z"
+    },
+    {
+      "title": "LAHO",
+      "mlcSongCode": "LS56AD",
+      "writers": [
+        {
+          "name": "EREDORO PROGRESS",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "CROWN UZAMAH",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "AYUSH GIRI",
+          "ipi": "01241190298",
+          "role": "Composer"
+        },
+        {
+          "name": "DAVID OMAGBEMI",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "UZAMA CROWN",
+          "ipi": "01225495356",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 45,
+          "representedWriters": []
+        },
+        {
+          "name": "Original Global Branding Management and Distribution LLC",
+          "collectionShare": 45,
+          "representedWriters": []
+        },
+        {
+          "name": "SINCE '94 PUBLISHING SERVICES LIMITED",
+          "ipi": "01181560564",
+          "collectionShare": 10,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "soundcloud",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "audiomack",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "amazonmusic",
+          "label": "THE ORCHARD"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500218",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "applemusic",
+          "label": "PLUTORECORD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI|CENTRAL CEE",
+          "title": "LAHO",
+          "isrc": "USQX92503808",
+          "dsp": "applemusic",
+          "label": "COLUMBIA"
+        },
+        {
+          "artist": "ZERRYDL SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "AYO MAFF",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI DAVIDO",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ISSA SISDOH",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "TYLA WIZTHEMC BEES & HONEY",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (NDLOH JNRS TOUCH) (MIXED)",
+          "isrc": "USA2P2522430",
+          "dsp": "spotify",
+          "label": "DJ PAAK"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "qobuz",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "spotify",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "YN ASAAHD",
+          "title": "LAHO",
+          "isrc": "QZPJ32472260",
+          "dsp": "applemusic",
+          "label": "YN ASAAHD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (MIXED)",
+          "isrc": "USA2P2525600",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "trebel",
+          "label": "ORCHARD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "iheartradio",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2522430",
+          "dsp": "youtube",
+          "label": "DJ PAAK"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (MIXED)",
+          "isrc": "USA2P2523483",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "DJ KENT",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "amazonmusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "soundcloud",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "tidal",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "soundcloud",
+          "label": "PLUTORECORD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (NDLOH JNRS TOUCH) (MIXED)",
+          "isrc": "USA2P2522430",
+          "dsp": "tidal",
+          "label": "DJ PAAK"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "melodyvr",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "youtube",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "amazonmusic",
+          "label": "THE ORCHARD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "beatport",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "youtube",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "beatport",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2562894",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "qobuz",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "tidal",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "iheartradio",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "YN ASAAHD",
+          "title": "LAHO",
+          "isrc": "QZPJ32472260",
+          "dsp": "amazonmusic",
+          "label": "LOUDR"
+        },
+        {
+          "artist": "DAVIDO",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (NDLOH JNRS TOUCH) (MIXED)",
+          "isrc": "USA2P2522430",
+          "dsp": "amazonmusic",
+          "label": "INGROOVES"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "soundcloud",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500218",
+          "dsp": "qobuz"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REAL AYOMIDE",
+          "title": "LAHO (COVER)",
+          "isrc": "TCAJP2596730",
+          "dsp": "applemusic",
+          "label": "REAL AYOMIDE"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (OFFICIAL VIDEO)",
+          "isrc": "GB1102500318",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "YN ASAAHD",
+          "title": "LAHO",
+          "isrc": "QZPJ32472260",
+          "dsp": "youtube",
+          "label": "YN ASAAHD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "pandora",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "iheartradio",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO (NDLOH JNRS TOUCH) (MIXED)",
+          "isrc": "USA2P2522430",
+          "dsp": "pandora",
+          "label": "DJ PAAK"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2523483",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "audiomack"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "US23A9666102",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "USA2P2525600",
+          "dsp": "pandora",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "deezer",
+          "label": "PLUTORECORD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "spotify",
+          "label": "PLUTORECORD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "HARMONIZE",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SARZ SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "DAVIDO",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "VICTONY ODUMODUBLVCK",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ASAKE AUGUSTE",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "DLALA THUKZIN FISHERMAN",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SEYI VIBEZ",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "ONDERKOFFER SHALLIPOPI SKALES",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "D'BANJ",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "IDD AZIZ SHALLIPOPI NITEFREAK FRANCIS MERCIER",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SEYI VIBEZ",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "AJEBUTTER22",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BOJ",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "MOOJO BUN XAPA",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "SE5BU2582648",
+          "dsp": "tidal",
+          "label": "PLUTORECORD"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO",
+          "isrc": "GBARL2500218",
+          "dsp": "turntable"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/1038065393",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json",
+      "fetchedAt": "2026-07-10T22:02:46.077Z"
+    },
+    {
+      "title": "LAHO II",
+      "mlcSongCode": "LT0R5C",
+      "writers": [
+        {
+          "name": "DAVID OMAGBEMI",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "EREDORO PROGRESS",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "UZAMA CROWN",
+          "ipi": "01225495356",
+          "role": "Composer/Author"
+        },
+        {
+          "name": "DAMINI EBUNOLUWA OGULU",
+          "ipi": "00730564064",
+          "role": "Composer/Author"
+        }
+      ],
+      "publishers": [
+        {
+          "name": "SM PUBLISHING UK LIMITED",
+          "ipi": "00584082436",
+          "collectionShare": 30,
+          "representedWriters": []
+        },
+        {
+          "name": "Original Global Branding Management and Distribution LLC",
+          "collectionShare": 30,
+          "representedWriters": []
+        },
+        {
+          "name": "UNIVERSAL TUNES, A DIVISION OF SONGS OF UNIVERSAL, INC.",
+          "ipi": "00282802562",
+          "collectionShare": 30,
+          "representedWriters": [
+            "DAMINI EBUNOLUWA OGULU"
+          ]
+        },
+        {
+          "name": "SINCE '94 PUBLISHING SERVICES LIMITED",
+          "ipi": "01181560564",
+          "collectionShare": 10,
+          "representedWriters": []
+        }
+      ],
+      "totalShares": 100,
+      "matchedRecordings": [
+        {
+          "artist": "SHALLIPOPI|BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "youtube",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY|SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI, BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "soundcloud",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "audiomack",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY|SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "pandora",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500563",
+          "dsp": "youtube"
+        },
+        {
+          "artist": "SHALLIPOPI|BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI LINDA CLIFFORD BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI,BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "amazonmusic",
+          "label": "SONY MUSIC ENTERTAINMENT"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BNXN",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI|BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "USA2P2548577",
+          "dsp": "applemusic",
+          "label": "RAINLABS"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI,BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI,BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "spotify",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "melodyvr",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "qobuz",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "beatport",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "mixcloud"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "iheartradio",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "BURNA BOY,SHALLIPOPI",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "deezer",
+          "label": "SINCE 93"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500563",
+          "dsp": "deezer"
+        },
+        {
+          "artist": "",
+          "title": "",
+          "isrc": "GBARL2500563",
+          "dsp": "qobuz"
+        },
+        {
+          "artist": "SHALLIPOPI DADAMAN GIPA ENTERTAINMENT MELLOW & SLEAZY BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "REMA",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SEYI VIBEZ TION WAYNE",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "MIRAA MAY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "applemusic"
+        },
+        {
+          "artist": "SHALLIPOPI & BURNA BOY",
+          "title": "LAHO II",
+          "isrc": "GBARL2500563",
+          "dsp": "tidal",
+          "label": "SINCE 93"
+        }
+      ],
+      "sourceUrl": "https://portal.themlc.com/catalog/work/1055329923",
+      "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json",
+      "fetchedAt": "2026-07-10T22:02:52.067Z"
+    }
+  ],
+  "gaps": [
+    {
+      "kind": "partial_shares",
+      "severity": "critical",
+      "workRef": "N742BZ",
+      "detail": "\"NEW CAT\" (MLC song code N742BZ) has only 50% of ownership shares registered. The remaining 50% of mechanical royalties on 20 matched recordings accrues as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/984723122",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705990947_search_new-cat_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "N742BZ",
+      "detail": "Writer CROWN UZAMA on \"NEW CAT\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/984723122",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705990947_search_new-cat_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "N742BZ",
+      "detail": "Writer OYADA AGADA (Composer/Author) on \"NEW CAT\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/984723122",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705990947_search_new-cat_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "N742BZ",
+      "detail": "Writer OYADA AGADA on \"NEW CAT\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/984723122",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705990947_search_new-cat_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "BE2Z6A",
+      "detail": "Writer PRINCE AGADA (Composer/Author) on \"BENIN BOYS\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/991687380",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705993912_search_benin-boys_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "BE2Z6A",
+      "detail": "Writer DIVINE IKUBOR on \"BENIN BOYS\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/991687380",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705993912_search_benin-boys_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "BE2Z6A",
+      "detail": "Writer UZAMA CROWN (Composer/Author) on \"BENIN BOYS\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/991687380",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705993912_search_benin-boys_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "EC4ZJH",
+      "detail": "Writer CROWN UZAMAH on \"EVIL RECEIVE\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968456920",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705999890_search_evil-receive_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "EC4ZJH",
+      "detail": "Writer PRINCE AGADA on \"EVIL RECEIVE\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968456920",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705999890_search_evil-receive_p0.json"
+      }
+    },
+    {
+      "kind": "partial_shares",
+      "severity": "critical",
+      "workRef": "J57BCA",
+      "detail": "\"JESERAWA\" (MLC song code J57BCA) has only 40% of ownership shares registered. The remaining 60% of mechanical royalties on 12 matched recordings accrues as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1068765689",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720888077_search_jeserawa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "J57BCA",
+      "detail": "Writer VALENTINE ANIKWENZE (Composer/Author) on \"JESERAWA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1068765689",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720888077_search_jeserawa_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "J57BCA",
+      "detail": "Writer VALENTINE ANIKWENZE on \"JESERAWA\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1068765689",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720888077_search_jeserawa_p0.json"
+      }
+    },
+    {
+      "kind": "partial_shares",
+      "severity": "critical",
+      "workRef": "LS2IWW",
+      "detail": "\"LUDO\" (MLC song code LS2IWW) has only 80% of ownership shares registered. The remaining 20% of mechanical royalties on 37 matched recordings accrues as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/989819428",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720897258_search_ludo_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS2IWW",
+      "detail": "Writer ANTHONY VICTOR on \"LUDO\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/989819428",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720897258_search_ludo_p0.json"
+      }
+    },
+    {
+      "kind": "partial_shares",
+      "severity": "critical",
+      "workRef": "WC0N86",
+      "detail": "\"WET ON ME\" (MLC song code WC0N86) has only 50% of ownership shares registered. The remaining 50% of mechanical royalties on 40 matched recordings accrues as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466532",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "WC0N86",
+      "detail": "Writer CROWN UZAMAH on \"WET ON ME\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466532",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "WC0N86",
+      "detail": "Writer DIVINE UZAMA (Composer/Author) on \"WET ON ME\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466532",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "WC0N86",
+      "detail": "Writer DIVINE UZAMA on \"WET ON ME\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466532",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "WC0N86",
+      "detail": "Writer SAHEEB HAHEEB (Composer/Author) on \"WET ON ME\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466532",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720900447_search_wet-on-me_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "ZR7I5N",
+      "detail": "Writer UZAMA CROWN (Composer/Author) on \"ZAAZAA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "ZR7I5N",
+      "detail": "Writer NATHANIEL TOTIMEH (Composer/Author) on \"ZAAZAA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "ZR7I5N",
+      "detail": "Writer ELISHA AMONOO NEIZER (Composer/Author) on \"ZAAZAA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "ZR7I5N",
+      "detail": "Writer KASPAR LUCAS SAHAND JALILY (Composer/Author) on \"ZAAZAA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "ZR7I5N",
+      "detail": "Writer DYVANCHO WEVER (Composer/Author) on \"ZAAZAA\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "ZR7I5N",
+      "detail": "Writer DYVANCHO WEVER on \"ZAAZAA\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1043145398",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720906166_search_zaazaa_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "JC2UPS",
+      "detail": "Writer SAHEEB HAHEEB (Composer/Author) on \"JONZE\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466249",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720912360_search_jonze_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "JC2UPS",
+      "detail": "Writer CROWN UZAMAH on \"JONZE\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/968466249",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720912360_search_jonze_p0.json"
+      }
+    },
+    {
+      "kind": "partial_shares",
+      "severity": "critical",
+      "workRef": "LS7VBT",
+      "detail": "\"LAHO III\" (MLC song code LS7VBT) has only 91.5% of ownership shares registered. The remaining 8.5% of mechanical royalties on 25 matched recordings accrues as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS7VBT",
+      "detail": "Writer EREDORO PROGRESS (Composer/Author) on \"LAHO III\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS7VBT",
+      "detail": "Writer EREDORO PROGRESS on \"LAHO III\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS7VBT",
+      "detail": "Writer JORGE PIZARRO (Composer/Author) on \"LAHO III\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS7VBT",
+      "detail": "Writer GERARDO DANNER (Composer/Author) on \"LAHO III\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS7VBT",
+      "detail": "Writer GERARDO DANNER on \"LAHO III\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS7VBT",
+      "detail": "Writer CROWN UZAMAH on \"LAHO III\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS7VBT",
+      "detail": "Writer RAUL ALEJANDRO OCASIO (Composer/Author) on \"LAHO III\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS7VBT",
+      "detail": "Writer NINO KARLO SEGARRA on \"LAHO III\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1053634325",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS56AD",
+      "detail": "Writer EREDORO PROGRESS (Composer/Author) on \"LAHO\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS56AD",
+      "detail": "Writer EREDORO PROGRESS on \"LAHO\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS56AD",
+      "detail": "Writer CROWN UZAMAH (Composer/Author) on \"LAHO\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS56AD",
+      "detail": "Writer CROWN UZAMAH on \"LAHO\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS56AD",
+      "detail": "Writer AYUSH GIRI (Composer) on \"LAHO\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS56AD",
+      "detail": "Writer DAVID OMAGBEMI (Composer/Author) on \"LAHO\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LS56AD",
+      "detail": "Writer DAVID OMAGBEMI on \"LAHO\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LS56AD",
+      "detail": "Writer UZAMA CROWN (Composer/Author) on \"LAHO\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1038065393",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LT0R5C",
+      "detail": "Writer DAVID OMAGBEMI (Composer/Author) on \"LAHO II\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1055329923",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LT0R5C",
+      "detail": "Writer DAVID OMAGBEMI on \"LAHO II\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1055329923",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LT0R5C",
+      "detail": "Writer EREDORO PROGRESS (Composer/Author) on \"LAHO II\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1055329923",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "missing_writer_ipi",
+      "severity": "warning",
+      "workRef": "LT0R5C",
+      "detail": "Writer EREDORO PROGRESS on \"LAHO II\" has no IPI number registered. Missing IPI makes royalty matching across societies unreliable.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1055329923",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "writer_no_publisher",
+      "severity": "critical",
+      "workRef": "LT0R5C",
+      "detail": "Writer UZAMA CROWN (Composer/Author) on \"LAHO II\" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.",
+      "evidence": {
+        "url": "https://portal.themlc.com/catalog/work/1055329923",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783720915290_search_laho-iii_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"ROCKSTAR\" (ISRC GBARL2501835) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"OPEUHH\" (ISRC GBARL2501830) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"MORE THAN ME\" (ISRC USA2P2354214) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"CAST\" (ISRC USA2P2354213) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"TURNER\" (ISRC GBARL2501825) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"PULL UP\" (ISRC GBARL2501832) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"SO WHAT?\" (ISRC ZA56E2304852) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"AURA\" (ISRC GBARL2501833) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"AFA RELAX OO\" (ISRC GBARL2500973) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"GBEFUN (FINE SHIT)\" (ISRC GBARL2501827) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"EYO\" (ISRC GBARL2501826) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"FIND ME\" (ISRC USA2P2418924) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"NEVER EVER\" (ISRC USA2P2354212) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"CAUTION (HOLD SOMETHING)\" (ISRC GBARL2501834) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"SEARCHING 4 ME\" (ISRC GBARL2501836) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    },
+    {
+      "kind": "work_not_registered",
+      "severity": "critical",
+      "detail": "\"LOADED\" (ISRC GBARL2501838) has no registration in the MLC database under Shallipopi's verified catalog. 100% of its US mechanical royalties accrue as unclaimed.",
+      "evidence": {
+        "url": "https://portal.themlc.com/search#work",
+        "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783705986324_search_rockstar_p0.json"
+      }
+    }
+  ],
+  "estimates": [],
+  "leakScore": 100,
+  "generatedAt": "2026-07-10T22:02:52.071Z",
+  "reportUrl": "http://localhost:8402/r/8c9c6e51-7c41-4806-a9d9-9a0690719063"
+}

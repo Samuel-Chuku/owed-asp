@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+data/
+fixtures/recon*/
+*.log
+CLAUDE.md
+.agents/
+royalty-asp-build-spec.md
+leak-report-template.html

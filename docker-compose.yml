@@ -1,0 +1,15 @@
+services:
+  owed-asp:
+    build: .
+    restart: unless-stopped
+    # bind to loopback only — Caddy on the host terminates TLS and proxies in
+    ports:
+      - '127.0.0.1:8402:8402'
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test: ['CMD-SHELL', "node -e \"fetch('http://localhost:8402/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3

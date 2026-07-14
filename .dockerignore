@@ -1,0 +1,13 @@
+node_modules
+data
+frontend
+fixtures
+test
+scripts
+deploy
+assets
+.git
+.env
+*.md
+.github
+.agents

@@ -1,0 +1,14 @@
+# Append to the VPS Caddyfile. Cloudflare DNS record for useowed.xyz must be DNS-only (grey cloud) so Caddy can issue TLS., then: sudo systemctl reload caddy
+# Caddy handles TLS automatically.
+
+useowed.xyz {
+	encode gzip
+
+	# MCP endpoint + report/kit/evidence pages all live on the one Fastify app
+	reverse_proxy 127.0.0.1:8402
+
+	header {
+		# reports are meant to be shared; everything else is API
+		-Server
+	}
+}

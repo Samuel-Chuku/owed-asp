@@ -1,0 +1,518 @@
+{
+  "title": "SPEEDOMETER",
+  "mlcSongCode": "SB5VH7",
+  "iswc": "T3246856991",
+  "writers": [
+    {
+      "name": "SAHEEB HAHEEB",
+      "ipi": "01219346165",
+      "role": "Composer/Author"
+    },
+    {
+      "name": "CROWN UZAMAH",
+      "role": "Composer/Author"
+    }
+  ],
+  "publishers": [
+    {
+      "name": "SM PUBLISHING UK LIMITED",
+      "ipi": "00584082436",
+      "collectionShare": 50,
+      "representedWriters": [
+        "CROWN UZAMAH"
+      ]
+    }
+  ],
+  "totalShares": 50,
+  "matchedRecordings": [
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic",
+      "label": "DVPPER DIGITAL"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "spotify",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "spotify",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "youtube",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "youtube",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "beatport",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "spotify",
+      "label": "DVPPER"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "tidal",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "amazonmusic",
+      "label": "WARNER MUSIC GROUP"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "youtube",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI KOLABOY",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "boomplay",
+      "label": "DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "pandora",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "tidal",
+      "label": "DVPPER DIGITAL"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "deezer",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "deezer",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "amazonmusic",
+      "label": "AFRICORI LIMITED"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "tidal",
+      "label": "AFRICORI LIMITED"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER (MIXED)",
+      "isrc": "QZYXP2348361",
+      "dsp": "boomplay",
+      "label": "INTERSPACE SOUND SYSTEM"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER SPED UP",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "applemusic"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER PROD BY SPIRITUAL BEATZ NETNAIJA COM",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER (MIXED)",
+      "isrc": "QZYFZ2319197",
+      "dsp": "boomplay",
+      "label": "JUST GOODVIBES ENTERTAINMENT LTD."
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "trebel",
+      "label": "WARNER"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "amazonmusic",
+      "label": "INGROOVES"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "03 SHALLIPOPI SPEEDOMETER SPEED UP",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "QZYXP2348361",
+      "dsp": "tidal"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "pandora",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "QZYXP2348361",
+      "dsp": "amazonmusic",
+      "label": "LA CUPULA"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ESA012361517",
+      "dsp": "amazonmusic",
+      "label": "LA CUPULA"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "melodyvr",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "livexlive",
+      "label": "PLUTOMANIA / DV"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER (MIXED)",
+      "isrc": "ESA012361517",
+      "dsp": "boomplay",
+      "label": "INTERSPACE MUSIC GROUP"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ESA012361517",
+      "dsp": "melodyvr",
+      "label": "INTERSPACE MUSIC GROUP"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "FREE BEAT SHALLIPOPI SPEEDOMETER REMAKE BY CHIZBENBEATZ",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "soundcloud",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "PLANKING FM FEATURING SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "QZYXP2370609",
+      "dsp": "soundcloud",
+      "label": "PLANKING FM"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "QZYXP2348361",
+      "dsp": "youtube",
+      "label": "INTERSPACE SOUND SYSTEM"
+    },
+    {
+      "artist": "OLAMIDE FEATURING SHALLIPOPI",
+      "title": "GAZA & SPEEDOMETER",
+      "isrc": "QZYXP2370610",
+      "dsp": "soundcloud",
+      "label": "PLANKING FM"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ESA012361517",
+      "dsp": "youtube",
+      "label": "INTERSPACE MUSIC GROUP"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "midwesttape",
+      "label": "DVPPER DIGITAL"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ESA012361517",
+      "dsp": "tidal"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "iheartradio",
+      "label": "PLUTOMANIA DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "boomplay",
+      "label": "DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "qobuz",
+      "label": "PLUTOMANIA - DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "deezer",
+      "label": "DVPPER DIGITAL"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "NGA602300389",
+      "dsp": "trebel",
+      "label": "DIXTRIT.MEDIA"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SHALLIPOPI SPEEDOMETER VIA AFROBOOM",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "qobuz",
+      "label": "DVPPER"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "trebel",
+      "label": "INGROOVES"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER (MIXED)",
+      "isrc": "UK6822311595",
+      "dsp": "tidal",
+      "label": "THE STATE51 CONSPIRACY"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER TRENDYBEATZ COM",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "mixcloud"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "UK6822311595",
+      "dsp": "soundcloud",
+      "label": "INTERSPACE SOUND SYSTEM"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER TRENDYBEATZ COM",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "ZA56E2304741",
+      "dsp": "gtl",
+      "label": "PLUTOMANIA / DVPPER MUSIC"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "UK6822311595",
+      "dsp": "youtube",
+      "label": "INTERSPACE SOUND SYSTEM"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "isrc": "QZYXP2348361",
+      "dsp": "soundcloud",
+      "label": "INTERSPACE SOUND SYSTEM"
+    },
+    {
+      "artist": "SHALLIPOPI SPEEDOMETER",
+      "title": "SHALLIPOPI SPEEDOMETER",
+      "dsp": "audiomack"
+    },
+    {
+      "artist": "SHALLIPOPI",
+      "title": "SPEEDOMETER",
+      "dsp": "audiomack"
+    }
+  ],
+  "sourceUrl": "https://portal.themlc.com/catalog/work/959562135",
+  "snapshotPath": "/home/hirving/BrainChildren/okx_ASP/data/snapshots/1783662753073_search_speedometer_p0.json",
+  "fetchedAt": "2026-07-10T05:52:36.682Z"
+}

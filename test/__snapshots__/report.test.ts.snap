@@ -1,0 +1,509 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renderReport (leak-report-template binding) > matches the rendered snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owed — Royalty Audit: Shallipopi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14110B;          /* dark table the statement sits on */
+    --ink-2:#1D1912;
+    --paper:#F6F1E5;        /* the statement sheet */
+    --paper-dim:#EDE6D4;
+    --line:#D8CEB6;
+    --text:#241F15;
+    --muted:#6E6553;
+    --claimed:#3E7C4F;      /* banknote green */
+    --leak:#D96C1E;         /* heat — money escaping */
+    --leak-deep:#B4530F;
+    --stamp:#B4530F;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--ink);font-family:'Hanken Grotesk',sans-serif;color:var(--text);padding:clamp(12px,3vw,48px)}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);border-radius:4px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.55)}
+
+  /* Header band */
+  .band{background:var(--ink-2);color:var(--paper);padding:20px 28px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .band .brand{font-family:'Fraunces',serif;font-weight:900;font-size:1.05rem;letter-spacing:.02em}
+  .band .brand span{color:var(--leak)}
+  .band .meta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#9C937F;text-align:right;line-height:1.6}
+
+  /* Verdict */
+  .verdict{padding:36px 28px 28px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.5rem,4.6vw,2.2rem);line-height:1.18;letter-spacing:-.01em}
+  h1 em{font-style:normal;color:var(--leak-deep);border-bottom:3px solid var(--leak)}
+  .verdict p{margin-top:14px;font-size:.95rem;color:var(--muted);max-width:56ch;line-height:1.55}
+
+  /* Catalog split bar — the signature */
+  .split{padding:24px 28px;border-bottom:1px solid var(--line)}
+  .split-labels{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:.7rem;margin-bottom:8px}
+  .split-labels .l{color:var(--claimed);font-weight:700}
+  .split-labels .r{color:var(--leak-deep);font-weight:700}
+  .bar{height:34px;border-radius:3px;overflow:hidden;display:flex;border:1px solid var(--ink-2)}
+  .bar .claimed{background:var(--claimed);position:relative}
+  .bar .leaking{background:repeating-linear-gradient(-45deg,var(--leak),var(--leak) 8px,var(--leak-deep) 8px,var(--leak-deep) 16px)}
+  .bar div{display:flex;align-items:center;justify-content:center;color:var(--paper);font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.78rem}
+  .split .note{margin-top:10px;font-size:.8rem;color:var(--muted)}
+
+  /* Money clock */
+  .clock{display:flex;gap:0;border-bottom:1px solid var(--line)}
+  .clock>div{flex:1;padding:18px 28px}
+  .clock>div+div{border-left:1px solid var(--line)}
+  .clock .num{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.3rem,3.4vw,1.7rem);color:var(--leak-deep)}
+  .clock .num.g{color:var(--claimed)}
+  .clock .lbl{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+  /* Song cards */
+  .songs{padding:28px}
+  .songs h2{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;margin-bottom:16px}
+  .card{border:1px solid var(--line);border-radius:4px;background:#FBF7EC;margin-bottom:14px;overflow:hidden}
+  .card-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;gap:10px;flex-wrap:wrap}
+  .card-head .title{font-weight:700;font-size:1rem}
+  .card-head .title small{display:block;font-weight:500;color:var(--muted);font-size:.75rem;margin-top:2px}
+  .stamp{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.66rem;letter-spacing:.12em;color:var(--stamp);border:2px solid var(--stamp);border-radius:3px;padding:4px 8px;transform:rotate(-2deg)}
+  .stamp.ok{color:var(--claimed);border-color:var(--claimed)}
+  .minibar{height:10px;display:flex;margin:0 16px;border-radius:2px;overflow:hidden;border:1px solid var(--line)}
+  .minibar .claimed{background:var(--claimed)}
+  .minibar .leaking{background:repeating-linear-gradient(-45deg,var(--leak),var(--leak) 5px,var(--leak-deep) 5px,var(--leak-deep) 10px)}
+  .card-body{padding:12px 16px 16px;font-size:.88rem;line-height:1.55}
+  .card-body .who{margin-bottom:8px}
+  .card-body .who b{color:var(--leak-deep)}
+  .est{display:flex;justify-content:space-between;align-items:baseline;background:var(--paper-dim);border:1px dashed var(--line);border-radius:3px;padding:10px 12px;margin-top:10px;gap:8px;flex-wrap:wrap}
+  .est .range{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;color:var(--leak-deep)}
+  .est .cap{font-size:.72rem;color:var(--muted)}
+  .evidence{margin-top:10px;font-size:.75rem}
+  .evidence a{color:var(--claimed);font-weight:600;text-decoration:none;border-bottom:1px solid var(--claimed)}
+
+  /* CTA */
+  .cta{margin:0 28px 28px;background:var(--ink-2);border-radius:4px;color:var(--paper);padding:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .cta .t{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;max-width:34ch;line-height:1.3}
+  .cta .t small{display:block;font-family:'Hanken Grotesk';font-weight:400;font-size:.78rem;color:#9C937F;margin-top:6px}
+  .btn{background:var(--leak);color:#fff;font-weight:700;font-size:.9rem;padding:12px 20px;border-radius:3px;text-decoration:none;white-space:nowrap}
+
+  /* Method + appendix */
+  .foot{padding:20px 28px 28px;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted);line-height:1.6}
+  .foot details{margin-top:10px}
+  .foot summary{cursor:pointer;font-weight:600;color:var(--text)}
+  .foot code{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--paper-dim);padding:1px 5px;border-radius:2px}
+  @media (max-width:520px){.clock{flex-direction:column}.clock>div+div{border-left:none;border-top:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="band">
+    <div class="brand">OW<span>ED</span> · ROYALTY AUDIT</div>
+    <div class="meta">SCAN OW-20260710-8C9C<br>GENERATED 10 JUL 2026 · SOURCES: THE MLC (PUBLIC)</div>
+  </div>
+  
+  <div class="verdict">
+    <div class="eyebrow">Artist · Shallipopi — catalog verified by ISRC (25 tracks)</div>
+    <h1>Money is being collected on <em>24 of your songs</em> that isn't reaching anyone.</h1>
+    <p>US streaming services pay songwriter royalties for these songs every month. Because part of the ownership was never registered, that share is being held in the US instead of paid out. It stays claimable — but unclaimed money is eventually redistributed to major publishers.</p>
+  </div>
+
+  <div class="split">
+    <div class="split-labels"><span class="l">BEING PAID OUT</span><span class="r">HELD / UNCLAIMED</span></div>
+    <div class="bar">
+      <div class="claimed" style="width:38%">38%</div>
+      <div class="leaking" style="width:62%">62%</div>
+    </div>
+    <div class="note">Share of your catalog's registered US songwriter royalties, weighted by streaming volume.</div>
+  </div>
+
+  <div class="clock">
+    <div><div class="num">—</div><div class="lbl">Est. accrued to date</div></div>
+    <div><div class="num">—</div><div class="lbl">Est. ongoing leak</div></div>
+    <div><div class="num g">$0</div><div class="lbl">Cost to claim (MLC is free)</div></div>
+  </div>
+
+  <div class="songs">
+    <h2>Song-by-song findings</h2>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Wet On Me <small>40 recordings earning · Apple Music, Spotify, Audiomack, YouTube +13 more</small></div>
+        <div class="stamp">50% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:50%"></div><div class="leaking" style="width:50%"></div></div>
+      <div class="card-body">
+        <div class="who">Only 50% of this song's ownership is registered. <b>Divine Uzama and Saheeb Haheeb</b> have no one registered to collect for them — their share of every US songwriter dollar is being held, not paid out.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/968466532" target="_blank" rel="noopener">The MLC public record — song code WC0N86</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">New Cat <small>20 recordings earning · Apple Music, Spotify, Audiomack, YouTube +10 more</small></div>
+        <div class="stamp">50% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:50%"></div><div class="leaking" style="width:50%"></div></div>
+      <div class="card-body">
+        <div class="who">Only 50% of this song's ownership is registered. <b>Oyada Agada</b> has no one registered to collect for them — their share of every US songwriter dollar is being held, not paid out.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/984723122" target="_blank" rel="noopener">The MLC public record — song code N742BZ</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Ludo <small>37 recordings earning · Apple Music, Spotify, YouTube, Audiomack +9 more</small></div>
+        <div class="stamp">20% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:80%"></div><div class="leaking" style="width:20%"></div></div>
+      <div class="card-body">
+        <div class="who">Only 80% of this song's ownership is registered. The remaining <b>20%</b> of its US songwriter royalties is being held, not reaching anyone.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/989819428" target="_blank" rel="noopener">The MLC public record — song code LS2IWW</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Jeserawa <small>12 recordings earning · Apple Music, Audiomack, Spotify, YouTube +8 more</small></div>
+        <div class="stamp">60% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:40%"></div><div class="leaking" style="width:60%"></div></div>
+      <div class="card-body">
+        <div class="who">Only 40% of this song's ownership is registered. <b>Valentine Anikwenze</b> has no one registered to collect for them — their share of every US songwriter dollar is being held, not paid out.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/1068765689" target="_blank" rel="noopener">The MLC public record — song code J57BCA</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Laho Iii <small>25 recordings earning · Apple Music, Spotify, YouTube, amazonmusic +9 more</small></div>
+        <div class="stamp">8% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:92%"></div><div class="leaking" style="width:8%"></div></div>
+      <div class="card-body">
+        <div class="who">Only 92% of this song's ownership is registered. <b>Eredoro Progress, Jorge Pizarro, Gerardo Danner and Raul Alejandro Ocasio</b> have no one registered to collect for them — their share of every US songwriter dollar is being held, not paid out.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/1053634325" target="_blank" rel="noopener">The MLC public record — song code LS7VBT</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Benin Boys <small>210 recordings earning · Apple Music, Spotify, amazonmusic, YouTube +17 more</small></div>
+        <div class="stamp">0% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who"><b>Prince Agada and Uzama Crown</b> have no one registered to collect on this song. Their share of its US songwriter royalties may not be reaching them.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/991687380" target="_blank" rel="noopener">The MLC public record — song code BE2Z6A</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Zaazaa <small>134 recordings earning · Spotify, Apple Music, YouTube, Tidal +10 more</small></div>
+        <div class="stamp">0% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who"><b>Uzama Crown, Nathaniel Totimeh, Elisha Amonoo Neizer, Kaspar Lucas Sahand Jalily and Dyvancho Wever</b> have no one registered to collect on this song. Their share of its US songwriter royalties may not be reaching them.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/1043145398" target="_blank" rel="noopener">The MLC public record — song code ZR7I5N</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Jonze <small>20 recordings earning · Apple Music, Audiomack, Spotify, YouTube +11 more</small></div>
+        <div class="stamp">0% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who"><b>Saheeb Haheeb</b> has no one registered to collect on this song. Their share of its US songwriter royalties may not be reaching them.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/968466249" target="_blank" rel="noopener">The MLC public record — song code JC2UPS</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Laho <small>137 recordings earning · Apple Music, Spotify, YouTube, amazonmusic +12 more</small></div>
+        <div class="stamp">0% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who"><b>Eredoro Progress, Crown Uzamah, Ayush Giri, David Omagbemi and Uzama Crown</b> have no one registered to collect on this song. Their share of its US songwriter royalties may not be reaching them.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/1038065393" target="_blank" rel="noopener">The MLC public record — song code LS56AD</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Laho Ii <small>51 recordings earning · Apple Music, Spotify, YouTube, amazonmusic +10 more</small></div>
+        <div class="stamp">0% UNCLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who"><b>David Omagbemi, Eredoro Progress and Uzama Crown</b> have no one registered to collect on this song. Their share of its US songwriter royalties may not be reaching them.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/1055329923" target="_blank" rel="noopener">The MLC public record — song code LT0R5C</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Rockstar <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Opeuhh <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">More Than Me <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Cast <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Turner <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Pull Up <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">So What? <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Aura <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Afa Relax Oo <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Gbefun (fine Shit) <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Eyo <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Find Me <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Never Ever <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Caution (hold Something) <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Searching 4 Me <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Loaded <small>earning on streaming platforms · no US registration found</small></div>
+        <div class="stamp">NOT REGISTERED</div>
+      </div>
+      <div class="minibar"><div class="leaking" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">This song does not appear in the US songwriter registry at all. <b>100% of its songwriter royalties</b> are unclaimed.</div>
+        <div class="evidence">Searched: title + all known recording codes — <a href="https://portal.themlc.com/search#work" target="_blank" rel="noopener">no matching work found</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="title">Evil Receive <small>62 recordings earning · Apple Music, Audiomack, Spotify, YouTube +14 more</small></div>
+        <div class="stamp ok">FULLY CLAIMED</div>
+      </div>
+      <div class="minibar"><div class="claimed" style="width:100%"></div></div>
+      <div class="card-body">
+        <div class="who">Registration covers the full song, but Crown Uzamah and Prince Agada is missing a global songwriter ID number. Matching across borders can silently fail, so part of the royalties can go astray.</div>
+        
+        <div class="evidence">Verify it yourself: <a href="https://portal.themlc.com/catalog/work/968456920" target="_blank" rel="noopener">The MLC public record — song code EC4ZJH</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="t">Fix all 26 gaps with a guided claim kit built for this exact catalog.
+      <small>Registration itself is free — the kit is the map: member setup, W-8BEN for non-US writers, every song and share to claim, done in an evening.</small>
+    </div>
+    <a class="btn" href="http://localhost:8402/k/8c9c6e51-7c41-4806-a9d9-9a0690719063">Get the claim kit · $19</a>
+  </div>
+
+  <div class="foot">
+    <strong>How the estimates work:</strong> public stream counts × estimated US share of streams (25–40%) × the US statutory songwriter rate × your unclaimed percentage. Ranges, not balances — only claiming reveals the exact figure held. The registration gaps themselves are not estimates: each one links to the public record above.
+    <details><summary>Registry data appendix (for your publisher or lawyer)</summary>
+      <p style="margin-top:8px">New Cat — MLC song code <code>N742BZ</code>, ISRC <code>USA2P2418925</code> <code>USA2P2418922</code>. Writers: Crown Uzama (IPI <code>— missing</code>), Oyada Agada (IPI <code>— missing</code>), Crown Uzama (IPI <code>01225495454</code>). Registered collection share: 50% (Since '94 Publishing Services Limited at 50%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Benin Boys — MLC song code <code>BE2Z6A</code>, ISWC <code>T3264063750</code>, ISRC <code>NGUM72400001</code> <code>USA2P2523486</code> <code>NGA5T2413889</code>. Writers: Prince Agada (IPI <code>01246489230</code>), Divine Ikubor (IPI <code>— missing</code>), Uzama Crown (IPI <code>01225495356</code>). Registered collection share: 100% (Mavin Global Holdings Limited at 45%; Sm Publishing Uk Limited at 40%; Sm Publishing Uk Limited at 15%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Evil Receive — MLC song code <code>EC4ZJH</code>, ISWC <code>T3259413844</code>, ISRC <code>USA2P2354051</code> <code>TCAHP2357767</code> <code>QZZ972341847</code>. Writers: Crown Uzamah (IPI <code>— missing</code>), Prince Agada (IPI <code>— missing</code>). Registered collection share: 100% (Sm Publishing Uk Limited at 50%; Sm Publishing Uk Limited at 50%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Jeserawa — MLC song code <code>J57BCA</code>, ISRC <code>QZNJZ2587151</code>. Writers: Valentine Anikwenze (IPI <code>— missing</code>). Registered collection share: 40% (Songs Of Elizabeth Music Group at 5%; Afro Soundtrack Llc at 35%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Ludo — MLC song code <code>LS2IWW</code>, ISRC <code>QZWA32200680</code>. Writers: Richard Isong Olowaranti Mbu Isong (IPI <code>00616695618</code>), Anthony Victor (IPI <code>— missing</code>). Registered collection share: 80% (Avex Usa Hits at 30%; Warner Chappell Music Ltd at 50%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Wet On Me — MLC song code <code>WC0N86</code>, ISRC <code>USA2P2354216</code> <code>QZZ972342311</code>. Writers: Crown Uzamah (IPI <code>— missing</code>), Divine Uzama (IPI <code>— missing</code>), Saheeb Haheeb (IPI <code>01219346165</code>). Registered collection share: 50% (Sm Publishing Uk Limited at 40%; Since '94 Publishing Services Limited at 10%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Zaazaa — MLC song code <code>ZR7I5N</code>, ISWC <code>T3319632407</code>, ISRC <code>NLG662500171</code> <code>NLG662500321</code> <code>NLG662500322</code>. Writers: Uzama Crown (IPI <code>01225495356</code>), Tevin I Plaate (IPI <code>00584851313</code>), Nathaniel Totimeh (IPI <code>01283186048</code>), Elisha Amonoo Neizer (IPI <code>00867126415</code>), Kaspar Lucas Sahand Jalily (IPI <code>00879110222</code>), Francis Edusei (IPI <code>00774820907</code>), Dyvancho Wever (IPI <code>— missing</code>). Registered collection share: 100% (Universal Music Publ. B.v. at 6.4%; Straight Shooter Publishing at 9.6%; Sm Publishing Uk Limited at 15%; Deja Vu Publishing at 16%; Original Global Branding Management and Distribution LLC at 44%; Cloud 9 Holland Music Pub at 9%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Jonze — MLC song code <code>JC2UPS</code>, ISWC <code>T3246857096</code>, ISRC <code>USA2P2354220</code> <code>TCAHQ2317350</code>. Writers: Saheeb Haheeb (IPI <code>01219346165</code>), Crown Uzamah (IPI <code>— missing</code>). Registered collection share: 100% (Sm Publishing Uk Limited at 50%; Since '94 Publishing Services Limited at 50%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Laho Iii — MLC song code <code>LS7VBT</code>, ISRC <code>GBARL2501015</code>. Writers: Eredoro Progress (IPI <code>— missing</code>), Jorge Pizarro (IPI <code>00369239621</code>), Gerardo Danner (IPI <code>— missing</code>), Crown Uzamah (IPI <code>— missing</code>), Raul Alejandro Ocasio (IPI <code>00753490821</code>), Nino Karlo Segarra (IPI <code>— missing</code>). Registered collection share: 92% (Isla Estrella Publishing at 8%; Sm Publishing Uk Limited at 33.5%; Original Global Branding Management and Distribution LLC at 50%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Laho — MLC song code <code>LS56AD</code>, ISRC <code>GBARL2500218</code> <code>SE5BU2582648</code> <code>USQX92503808</code>. Writers: Eredoro Progress (IPI <code>— missing</code>), Crown Uzamah (IPI <code>— missing</code>), Ayush Giri (IPI <code>01241190298</code>), David Omagbemi (IPI <code>— missing</code>), Uzama Crown (IPI <code>01225495356</code>). Registered collection share: 100% (Sm Publishing Uk Limited at 45%; Original Global Branding Management and Distribution LLC at 45%; Since '94 Publishing Services Limited at 10%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Laho Ii — MLC song code <code>LT0R5C</code>, ISRC <code>GBARL2500563</code> <code>USA2P2548577</code>. Writers: David Omagbemi (IPI <code>— missing</code>), Eredoro Progress (IPI <code>— missing</code>), Uzama Crown (IPI <code>01225495356</code>), Damini Ebunoluwa Ogulu (IPI <code>00730564064</code>). Registered collection share: 100% (Sm Publishing Uk Limited at 30%; Original Global Branding Management and Distribution LLC at 30%; Universal Tunes, A Division Of Songs Of Universal, Inc. at 30%; Since '94 Publishing Services Limited at 10%). Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Rockstar — no MLC work found. Searched title and ISRC <code>GBARL2501835</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Opeuhh — no MLC work found. Searched title and ISRC <code>GBARL2501830</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">More Than Me — no MLC work found. Searched title and ISRC <code>USA2P2354214</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Cast — no MLC work found. Searched title and ISRC <code>USA2P2354213</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Turner — no MLC work found. Searched title and ISRC <code>GBARL2501825</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Pull Up — no MLC work found. Searched title and ISRC <code>GBARL2501832</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">So What? — no MLC work found. Searched title and ISRC <code>ZA56E2304852</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Aura — no MLC work found. Searched title and ISRC <code>GBARL2501833</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Afa Relax Oo — no MLC work found. Searched title and ISRC <code>GBARL2500973</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Gbefun (fine Shit) — no MLC work found. Searched title and ISRC <code>GBARL2501827</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Eyo — no MLC work found. Searched title and ISRC <code>GBARL2501826</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Find Me — no MLC work found. Searched title and ISRC <code>USA2P2418924</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Never Ever — no MLC work found. Searched title and ISRC <code>USA2P2354212</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Caution (hold Something) — no MLC work found. Searched title and ISRC <code>GBARL2501834</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Searching 4 Me — no MLC work found. Searched title and ISRC <code>GBARL2501836</code>. Snapshot archived 10 JUL 2026.</p>
+      <p style="margin-top:8px">Loaded — no MLC work found. Searched title and ISRC <code>GBARL2501838</code>. Snapshot archived 10 JUL 2026.</p>
+    </details>
+    <p style="margin-top:12px">Owed is not affiliated with The MLC. Claiming through The MLC is free. This report is educational guidance, not legal advice.</p>
+  </div>
+
+</div>
+</body>
+</html>"
+`;
