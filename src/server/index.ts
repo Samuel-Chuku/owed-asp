@@ -224,7 +224,10 @@ function buildMcpServer(paymentHeader: string | undefined): McpServer {
 // ---- Fastify host ----
 
 async function main() {
-  const app = Fastify({ logger: true });
+  // trustProxy: X-Forwarded-For from the local nginx/Caddy front — without it
+  // request.ip is 127.0.0.1 for every caller and the quick-check throttle
+  // would rate-limit all users as one.
+  const app = Fastify({ logger: true, trustProxy: true });
 
   app.get('/healthz', async () => ({ ok: true, service: 'owed-asp', paymentMode: paymentCfg.mode }));
 

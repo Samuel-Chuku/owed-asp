@@ -32,4 +32,4 @@ docker compose up -d --build
 sleep 5
 curl -sf http://127.0.0.1:8402/healthz && echo "" && echo ">> Owed ASP is up on 127.0.0.1:8402"
 
-echo ">> Remaining (once): append deploy/Caddyfile.snippet to /etc/caddy/Caddyfile and 'sudo systemctl reload caddy'."
+echo ">> Remaining (once): install deploy/nginx-owed.conf per its header comment (nginx + certbot)."

@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/hirving/BrainChildren/okx_ASP/frontend/app/layout":["static/media/af4bf8399d1aacdf-s.p.woff2","static/media/558ca1a6aa3cb55e-s.p.woff2","static/media/313510e2713fb214-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

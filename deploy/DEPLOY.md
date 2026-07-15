@@ -1,12 +1,13 @@
 # Owed ASP — deploy (Docker + CI/CD)
 
-Target: RackNerd VPS, host Caddy terminating TLS, app in Docker, GitHub Actions
-deploying on every push to main. Production endpoint: https://useowed.xyz/mcp
+Target: the existing RackNerd VPS — host nginx terminating TLS (certbot), app
+in Docker, GitHub Actions deploying on every push to main. Production
+endpoint: https://useowed.xyz/mcp
 
 ## One-time setup
 
 **0. DNS (Cloudflare):** A record `useowed.xyz` → VPS IP, **DNS-only (grey
-cloud)** — Caddy needs to issue its own certificate.
+cloud)** — certbot needs to issue the certificate directly.
 
 **1. VPS bootstrap** (as your deploy user):
 
@@ -18,8 +19,10 @@ The script is re-runnable; it stops and tells you when to act (Docker group
 re-login, editing `.env`). `.env` needs: `PUBLIC_BASE_URL=https://useowed.xyz`,
 `YOUTUBE_API_KEY`, `PAYMENT_MODE=off` (until registration wiring lands).
 
-**2. Caddy:** append `deploy/Caddyfile.snippet` to `/etc/caddy/Caddyfile`,
-then `sudo systemctl reload caddy`.
+**2. nginx + TLS:** follow the header comment in `deploy/nginx-owed.conf` —
+copy to sites-available, enable, `sudo nginx -t && sudo systemctl reload
+nginx`, then `sudo certbot --nginx -d useowed.xyz`. (The conf keeps
+`proxy_buffering off` — required for the MCP streaming responses.)
 
 **3. CI/CD secrets** (GitHub repo → Settings → Secrets and variables →
 Actions): `VPS_HOST` (IP), `VPS_USER`, `VPS_SSH_KEY` (private key whose public
