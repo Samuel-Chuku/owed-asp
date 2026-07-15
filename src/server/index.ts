@@ -310,9 +310,21 @@ async function main() {
     });
   });
 
-  // Stateless server: GET/DELETE (SSE sessions) are not offered.
+  // Stateless server: sessions/SSE-resume are not offered. A browser GET gets
+  // a self-description instead of a bare error — listing reviewers click URLs.
   app.get('/mcp', async (_req, reply) =>
-    reply.code(405).send({ error: 'stateless server: POST only' }),
+    reply.code(200).send({
+      service: 'Owed — royalty leak scanner',
+      protocol: 'MCP (streamable HTTP, stateless). Connect with an MCP client and POST JSON-RPC here.',
+      tools: {
+        royalty_quick_check: '$0.05 — sampled leak preview for an artist',
+        royalty_leak_scan: '$0.50 — full-catalog audit; returns scanId, poll scan_status',
+        claim_kit_generate: '$5 — personalized fix plan from a completed scan',
+        scan_status: 'free — poll a scan; returns the report + hosted reportUrl when done',
+      },
+      website: 'https://useowed.xyz',
+      note: 'Owed is not affiliated with The MLC. Findings link to public registry records.',
+    }),
   );
 
   await app.listen({ port: PORT, host: '0.0.0.0' });
