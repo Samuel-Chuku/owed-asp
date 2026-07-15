@@ -52,6 +52,8 @@ Known refinement needed: `writer_no_publisher` fires on works with 100% register
 ## Frontend decision (user, Jul 10 — build LAST, after everything else ships)
 One Next.js page on Vercel, Day-6 work only: hero → artist-name input → free quick-check result → teaser of the full report; paid buttons route to the OKX.AI listing during the hackathon window (no Paystack in week one). It calls the same backend as the MCP tools. Purpose: Social Buzz + post-hackathon distribution (Lagos producers don't live on OKX.AI) — it adds nothing to ASP listing review. If Day 6 arrives behind schedule, the hosted report page alone carries the demo. "Frontend is dessert, not dinner." The user also wants this as their own friendly interface to the agent's abilities.
 
+## REGISTERED (Jul 15): OKX.AI Agent **#5885**, X Layer (chainIndex 196), tx 0x251ffcdd0f7419f4a6a169616d489df30e0505f05c62c71c750202e4bd932c0e — name "Owed", 3 A2MCP services (0.05 / 0.5 / 5 USDT) at https://useowed.xyz/mcp, avatar M2-drift (CDN: static.okx.com .../ed3f0078-a28b-4a59-b444-114b569b68b9.png). Registration CLI truth: service JSON keys are camelCase (serviceName/serviceDescription/serviceType/fee/endpoint) and serviceDescription REQUIRES a two-line \n format — the validate-listing PARSE error's own fix-example shows wrong lowercase keys.
+
 ## Domain (user, Jul 14): useowed.xyz — Cloudflare nameservers, DNS record must be DNS-only (grey cloud) so Caddy issues TLS. Endpoint for the listing: https://useowed.xyz/mcp. Deploy MUST precede ASP registration (listing rejects non-live endpoints; URL is permanent on-chain). ASP avatar: assets/owed-avatar.png. Wallet/agent CLI commands are classifier-blocked for the agent — user runs them with agent-prepared values.
 
 ## Still to build (spec §5–7)

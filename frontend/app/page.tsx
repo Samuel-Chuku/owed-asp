@@ -1,3 +1,4 @@
+import { CopyBlock } from './CopyBlock';
 import { QuickCheck } from './QuickCheck';
 
 // Every number on this page is from a real scan (Speedometer fixture,
@@ -124,6 +125,30 @@ export default function Page() {
           Paid tools run through the Owed agent on OKX.AI — your AI assistant can call them
           directly. The registry itself is free to use; Owed charges for finding gaps and mapping
           the fix, never for &ldquo;registration.&rdquo;
+        </p>
+      </section>
+
+      <section className="wire">
+        <h2>Wire your agent</h2>
+        <p className="wirelead">
+          Owed is an agent service — any assistant that speaks MCP over HTTP can run audits for
+          you. One endpoint, no keys.
+        </p>
+        <CopyBlock
+          label="Claude Code"
+          text="claude mcp add --transport http owed https://useowed.xyz/mcp"
+        />
+        <CopyBlock
+          label="Any MCP client (config JSON)"
+          text={`{ "mcpServers": { "owed": { "url": "https://useowed.xyz/mcp" } } }`}
+        />
+        <CopyBlock
+          label="Raw HTTP (see the tools)"
+          text={`curl -X POST https://useowed.xyz/mcp -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'`}
+        />
+        <p className="wirenote">
+          Then ask your agent: <em>&ldquo;run a royalty quick check on Shallipopi.&rdquo;</em>{' '}
+          On OKX.AI, Owed is Agent&nbsp;#5885.
         </p>
       </section>
 

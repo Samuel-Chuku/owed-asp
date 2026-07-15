@@ -256,6 +256,20 @@ h2 { font-family: var(--font-display), serif; font-size: 1.15rem; font-weight: 7
 .rates .sub { display: block; font-size: 0.85rem; color: var(--muted); font-weight: 400; margin-top: 2px; white-space: normal; }
 .rates .where { margin-top: 14px; font-size: 0.85rem; color: var(--muted); }
 
+/* Wire your agent */
+.wire { padding: 28px; border-bottom: 1px solid var(--line); }
+.wirelead { color: var(--muted); font-size: 0.95rem; margin: 6px 0 16px; max-width: 56ch; }
+.copyblock { border: 1px solid var(--line); border-radius: 4px; background: var(--card); margin-bottom: 12px; overflow: hidden; }
+.cb-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.cb-label { font-family: var(--font-mono), monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.cb-btn { font-family: var(--font-mono), monospace; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.08em; color: var(--claimed); background: none; border: 1px solid var(--claimed); border-radius: 3px; padding: 4px 10px; cursor: pointer; }
+.cb-btn:hover { background: var(--paper-dim); }
+.cb-btn:focus-visible { outline: 3px solid var(--leak); outline-offset: 2px; }
+.cb-btn:active { transform: translateY(1px); }
+.cb-pre { font-family: var(--font-mono), monospace; font-size: 0.78rem; line-height: 1.5; padding: 12px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; color: var(--text); }
+.wirenote { color: var(--muted); font-size: 0.9rem; margin-top: 14px; }
+.wirenote em { font-style: normal; color: var(--text); font-weight: 600; }
+
 /* Footer band */
 .footband { background: var(--ink-2); color: #9c937f; padding: 24px 28px; font-size: 0.8rem; line-height: 1.7; }
 .footband b { color: var(--paper); font-weight: 600; }
