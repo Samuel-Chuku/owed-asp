@@ -255,6 +255,49 @@ async function main() {
 
   app.get('/healthz', async () => ({ ok: true, service: 'owed-asp', paymentMode: paymentCfg.mode }));
 
+  // Free full-scan endpoints for the frontend (user decision, Jul 15: every
+  // step on the site is free until deliberately gated; the paid surface is
+  // the MCP/ASP side). Same job store and 24h cache as the paid tool.
+  const siteScanLastByIp = new Map<string, number>();
+  app.get<{ Querystring: { artist?: string } }>('/api/scan', async (request, reply) => {
+    reply.header('Access-Control-Allow-Origin', '*');
+    const artist = (request.query.artist ?? '').trim();
+    if (!artist) return reply.code(400).send({ error: 'missing_artist' });
+    const last = siteScanLastByIp.get(request.ip) ?? 0;
+    if (Date.now() - last < 120_000) {
+      return reply.code(429).send({ error: 'slow_down', note: 'One full scan per 2 minutes.' });
+    }
+    siteScanLastByIp.set(request.ip, Date.now());
+    const cached = jobs.findRecentComplete(artist);
+    if (cached) {
+      return reply.send({
+        scanId: cached.scanId,
+        status: 'complete',
+        cached: true,
+        reportUrl: `${BASE_URL}/r/${cached.scanId}`,
+        kitUrl: `${BASE_URL}/k/${cached.scanId}`,
+      });
+    }
+    const job = jobs.create(artist);
+    void executeScan(job.scanId);
+    return reply.send({ scanId: job.scanId, status: 'queued' });
+  });
+
+  app.get<{ Params: { scanId: string } }>('/api/scan-status/:scanId', async (request, reply) => {
+    reply.header('Access-Control-Allow-Origin', '*');
+    const job = jobs.get(request.params.scanId);
+    if (!job) return reply.code(404).send({ error: 'not_found' });
+    return reply.send({
+      scanId: job.scanId,
+      status: job.status,
+      progress: job.progress.slice(-3),
+      ...(job.status === 'complete'
+        ? { reportUrl: `${BASE_URL}/r/${job.scanId}`, kitUrl: `${BASE_URL}/k/${job.scanId}` }
+        : {}),
+      ...(job.status === 'error' ? { error: job.error } : {}),
+    });
+  });
+
   // Hosted report page — the shareable artifact (§5 step 6).
   app.get<{ Params: { scanId: string } }>('/r/:scanId', async (request, reply) => {
     const job = jobs.get(request.params.scanId);
@@ -328,7 +371,13 @@ async function main() {
     // validates. With Dev Portal keys the OKX Payment SDK also verifies and
     // settles on-chain before any work runs; without them the hand-rolled
     // challenge keeps the endpoint compliant but refuses paid headers.
-    if (paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
+    // Demo bypass: a secret header lets the owner's own agent test free while
+    // the endpoint stays 402-compliant for everyone else. Enabled only when
+    // PAYMENT_DEMO_KEY is set.
+    const demoKey = process.env.PAYMENT_DEMO_KEY;
+    const isDemoCall = Boolean(demoKey) && request.headers['x-owed-demo'] === demoKey;
+
+    if (!isDemoCall && paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
       if (sdkGate) {
         const result = await sdkGate.handle(request, paymentHeader);
         if (result.kind === 'respond') {

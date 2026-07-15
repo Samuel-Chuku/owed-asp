@@ -46,6 +46,12 @@ Known refinement needed: `writer_no_publisher` fires on works with 100% register
 ## Report template (user-supplied, Jul 11 — follow strictly)
 `leak-report-template.html` + `report-rendering-instructions.md` are the rendering contract for /r/{scanId} (src/server/report.ts renderReport + narratives.ts writeNarratives; snapshot-tested against fixtures/speedometer-scan.json). Approved deviations (user, Jul 11): (1) empty money-clock cells render an em-dash, never numbers; (2) verdict counts distinct affected TRACKS (gap-engine affectedTrackCount), not works+unregistered; (3) split bar includes unregistered tracks at 0% claimed, weighted at catalog-average when stream data is absent. Only other permitted change: the brand name.
 
+## Frontend revamp (user, Jul 15 — details arrive in a NEW session)
+**Every step on the frontend is FREE** (quick check, full scan, report, claim kit) until the user deliberately gates it; the paid surface is the MCP/ASP side only. Free REST surface for the site: `GET /api/quick-check?artist=` (20s/IP), `GET /api/scan?artist=` (120s/IP; 24h cache returns cached scanId + reportUrl + kitUrl), `GET /api/scan-status/:scanId` (returns reportUrl/kitUrl when complete) — all CORS `*`. The existing single-page design will be revamped per user direction next session.
+
+## Payments state (Jul 15 end of day)
+x402 LIVE on useowed.xyz: HTTP 402 + PAYMENT-REQUIRED (SDK-built challenge), OKX Dev Portal keys installed by user → facilitator verify + syncSettle ACTIVE (payTo 0xaeea695cc2757184353aa0119399f3c0529e1074). `PAYMENT_DEMO_KEY` env + `X-Owed-Demo` header = owner bypass for free demo calls (claude mcp add --header). Frontend /api/* routes never gated. Listing under OKX manual review — endpoint intentionally 402-compliant during review.
+
 ## Frontend (built Jul 14, user reordered it earlier than Day 6)
 `frontend/` — hand-rolled Next.js 15 app (no create-next-app), fully static build, deploys to Vercel. Single page sharing the report template's audit-statement DNA (tokens mirrored in `app/globals.css`; fonts via next/font). Calls `GET /api/quick-check?artist=` on the Fastify server (free site hook per the Jul 10 decision; CORS `*`, 20s/IP throttle). Env: `NEXT_PUBLIC_API_BASE` (backend origin), `NEXT_PUBLIC_LISTING_URL` (paid buttons; renders "listing in review" placeholder until set). The /k claim-kit page was redesigned to the same DNA (bigger type, localStorage checklist + progress bar; scanId passed to renderKitHtml for the storage key).
 
