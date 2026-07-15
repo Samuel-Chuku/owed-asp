@@ -17,7 +17,8 @@ import { existsSync, readFileSync } from 'node:fs';
 import { defaultMlcClient, runScan } from '../pipeline/scan.js';
 import { searchArtistCandidates } from '../identity/index.js';
 import { JobStore } from './jobs.js';
-import { gatePaidCall, paymentConfigFromEnv, PRICES_USD, type PaidTool } from './payment.js';
+import { gateMcpHttp, gatePaidCall, paidToolForBody, paymentConfigFromEnv, PRICES_USD, type PaidTool } from './payment.js';
+import { initX402Sdk, type SdkGate } from './payment-sdk.js';
 import { renderReportHtml } from './report.js';
 import { renderKitHtml } from './kit-page.js';
 import { generateClaimKit } from '../claim-kit/index.js';
@@ -223,11 +224,34 @@ function buildMcpServer(paymentHeader: string | undefined): McpServer {
 
 // ---- Fastify host ----
 
+let sdkGate: SdkGate | null = null;
+
 async function main() {
+  sdkGate = await initX402Sdk(paymentCfg).catch((err) => {
+    console.error('x402 SDK init failed — falling back to challenge-only mode:', err?.message ?? err);
+    return null;
+  });
+  if (paymentCfg.mode === 'x402') {
+    console.log(`x402 mode: ${sdkGate ? 'SDK verification + settlement ACTIVE' : 'challenge-only (no Dev Portal keys — paid calls refused)'}`);
+  }
   // trustProxy: X-Forwarded-For from the local nginx/Caddy front — without it
   // request.ip is 127.0.0.1 for every caller and the quick-check throttle
   // would rate-limit all users as one.
   const app = Fastify({ logger: true, trustProxy: true });
+
+  // Lenient JSON parsing: the marketplace review probe is a bare
+  // `curl -i -X POST <endpoint>` (no/invalid body) and must reach the x402
+  // gate to receive its 402 — not die in the body parser with a 400/415.
+  const lenientJson = (_req: unknown, body: string, done: (err: null, v: unknown) => void) => {
+    try {
+      done(null, body ? JSON.parse(body) : {});
+    } catch {
+      done(null, {});
+    }
+  };
+  app.removeAllContentTypeParsers();
+  app.addContentTypeParser('application/json', { parseAs: 'string' }, lenientJson);
+  app.addContentTypeParser('*', { parseAs: 'string' }, lenientJson);
 
   app.get('/healthz', async () => ({ ok: true, service: 'owed-asp', paymentMode: paymentCfg.mode }));
 
@@ -295,11 +319,35 @@ async function main() {
   });
 
   app.post('/mcp', async (request, reply) => {
-    // Stateless mode: fresh server + transport per request, no session ids.
-    const server = buildMcpServer(
+    const paymentHeader =
       (request.headers['x-payment'] as string | undefined) ??
-        (request.headers['payment-signature'] as string | undefined),
-    );
+      (request.headers['payment-signature'] as string | undefined);
+
+    // x402 gate at the HTTP layer (A2MCP compliance): paid tools/call without
+    // payment → 402 with the PAYMENT-REQUIRED header the marketplace
+    // validates. With Dev Portal keys the OKX Payment SDK also verifies and
+    // settles on-chain before any work runs; without them the hand-rolled
+    // challenge keeps the endpoint compliant but refuses paid headers.
+    if (paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
+      if (sdkGate) {
+        const result = await sdkGate.handle(request, paymentHeader);
+        if (result.kind === 'respond') {
+          return reply
+            .code(result.response.status)
+            .headers(result.response.headers)
+            .send(result.response.body ?? '');
+        }
+        for (const [k, v] of Object.entries(result.settlementHeaders)) {
+          reply.raw.setHeader(k, v);
+        }
+      } else {
+        const gate = gateMcpHttp(request.body, paymentHeader, paymentCfg, `${BASE_URL}/mcp`);
+        if (gate) return reply.code(gate.status).headers(gate.headers).send(gate.body);
+      }
+    }
+
+    // Stateless mode: fresh server + transport per request, no session ids.
+    const server = buildMcpServer(paymentHeader);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
     reply.hijack();
     await server.connect(transport);
