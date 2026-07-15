@@ -303,7 +303,7 @@ ${clean.map(workCard).join('\n')}
     <div class="t">Fix all ${criticalWorkCount} gaps with a guided claim kit built for this exact catalog.
       <small>Registration itself is free — the kit is the map: member setup, W-8BEN for non-US writers, every song and share to claim, done in an evening.</small>
     </div>
-    <a class="btn" href="${esc(kitUrl)}">Get the claim kit · $19</a>
+    <a class="btn" href="${esc(kitUrl)}">Get the claim kit · $5</a>
   </div>`
       : ''
   }

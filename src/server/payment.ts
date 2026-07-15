@@ -15,9 +15,9 @@
 export type PaidTool = 'royalty_quick_check' | 'royalty_leak_scan' | 'claim_kit_generate';
 
 export const PRICES_USD: Record<PaidTool, number> = {
-  royalty_quick_check: 1,
-  royalty_leak_scan: 5,
-  claim_kit_generate: 19,
+  royalty_quick_check: 0.05,
+  royalty_leak_scan: 0.5,
+  claim_kit_generate: 5,
 };
 
 const X_LAYER_CHAIN_ID = 196;

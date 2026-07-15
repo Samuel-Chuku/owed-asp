@@ -171,14 +171,14 @@ function Result({ data }: { data: CheckResult }) {
         {LISTING ? (
           <>
             <a className="btn hot" href={LISTING}>
-              Get the full audit · $5
+              Get the full audit · $0.50
             </a>
             <a className="btn" href={LISTING}>
-              Claim kit · $19
+              Claim kit · $5
             </a>
           </>
         ) : (
-          <span className="btn wait">Full audit · $5 — coming to OKX.AI (listing in review)</span>
+          <span className="btn wait">Full audit · $0.50 — coming to OKX.AI (listing in review)</span>
         )}
       </div>
     </div>

@@ -40,8 +40,8 @@ Known refinement needed: `writer_no_publisher` fires on works with 100% register
 
 `npm test` (vitest, offline, fixture-based) and `npm run typecheck` must pass before finishing any task.
 
-## Pricing decision (user, Jul 10 — overrides spec §6)
-`royalty_quick_check` is **$1**, not free (business-potential signal for judges). To justify the price its output is richer than the spec's yes/no: leak-score preview + count of gaps by kind, still no per-work details. `scan_status` stays free. Full pipeline: `royalty_leak_scan` $5, `claim_kit_generate` $19, `royalty_estimate` included.
+## Pricing decision (user, Jul 15 — supersedes Jul 10)
+`royalty_quick_check` **$0.05** · `royalty_leak_scan` **$0.50** · `claim_kit_generate` **$5** · `scan_status` free. Source of truth: PRICES_USD in src/server/payment.ts (drives x402 amounts + tool descriptions); also shown in report CTA, frontend rate card/buttons, and the OKX.AI listing fees — keep all in sync. Quick check remains free on the marketing site (distribution hook); richer-than-spec output (leak-score preview + gap counts) justifies the paid tool.
 
 ## Report template (user-supplied, Jul 11 — follow strictly)
 `leak-report-template.html` + `report-rendering-instructions.md` are the rendering contract for /r/{scanId} (src/server/report.ts renderReport + narratives.ts writeNarratives; snapshot-tested against fixtures/speedometer-scan.json). Approved deviations (user, Jul 11): (1) empty money-clock cells render an em-dash, never numbers; (2) verdict counts distinct affected TRACKS (gap-engine affectedTrackCount), not works+unregistered; (3) split bar includes unregistered tracks at 0% claimed, weighted at catalog-average when stream data is absent. Only other permitted change: the brand name.

@@ -110,7 +110,7 @@ export default function Page() {
             <span className="sub">Whole catalog · song-by-song statement · evidence links</span>
           </span>
           <span className="dots" />
-          <span className="price">$5</span>
+          <span className="price">$0.50</span>
         </div>
         <div className="rline">
           <span className="item">
@@ -118,7 +118,7 @@ export default function Page() {
             <span className="sub">Your personal fix plan, built from the audit</span>
           </span>
           <span className="dots" />
-          <span className="price">$19</span>
+          <span className="price">$5</span>
         </div>
         <p className="where">
           Paid tools run through the Owed agent on OKX.AI — your AI assistant can call them
