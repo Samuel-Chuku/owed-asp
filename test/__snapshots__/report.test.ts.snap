@@ -33,6 +33,14 @@ exports[`renderReport (leak-report-template binding) > matches the rendered snap
   .band .brand span{color:var(--leak)}
   .band .meta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#9C937F;text-align:right;line-height:1.6}
 
+  /* Save bar (approved deviation, Jul 16 — download / copy / email actions) */
+  .savebar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--paper-dim);border-bottom:1px solid var(--line);padding:10px 28px}
+  .savebar .st{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .saveacts{display:flex;gap:8px;flex-wrap:wrap}
+  .sbtn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text);background:var(--paper);border:1px solid var(--text);border-radius:3px;padding:5px 10px;text-decoration:none;cursor:pointer}
+  .sbtn:hover{background:#FBF7EC}
+  .sbtn:focus-visible{outline:3px solid var(--leak);outline-offset:2px}
+
   /* Verdict */
   .verdict{padding:36px 28px 28px;border-bottom:1px solid var(--line)}
   .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
@@ -100,6 +108,14 @@ exports[`renderReport (leak-report-template binding) > matches the rendered snap
   <div class="band">
     <div class="brand">OW<span>ED</span> · ROYALTY AUDIT</div>
     <div class="meta">SCAN OW-20260710-8C9C<br>GENERATED 10 JUL 2026 · SOURCES: THE MLC (PUBLIC)</div>
+  </div>
+  <div class="savebar">
+    <span class="st">Save this report — it lives only at this link</span>
+    <span class="saveacts">
+      <a class="sbtn" href="?download=1">Download</a>
+      <button class="sbtn" id="copy-link" type="button">Copy link</button>
+      <a class="sbtn" href="mailto:?subject=Your%20Owed%20royalty%20audit%20%E2%80%94%20Shallipopi&amp;body=Audit%20statement%3A%20http%3A%2F%2Flocalhost%3A8402%2Fr%2F8c9c6e51-7c41-4806-a9d9-9a0690719063%0AClaim%20kit%3A%20http%3A%2F%2Flocalhost%3A8402%2Fk%2F8c9c6e51-7c41-4806-a9d9-9a0690719063%0A%0AKeep%20this%20email%20%E2%80%94%20these%20links%20are%20the%20only%20way%20back%20to%20your%20report.">Email me the link</a>
+    </span>
   </div>
   
   <div class="verdict">
@@ -504,6 +520,19 @@ exports[`renderReport (leak-report-template binding) > matches the rendered snap
   </div>
 
 </div>
+<script>
+  (function () {
+    var b = document.getElementById('copy-link');
+    if (!b) return;
+    if (!navigator.clipboard) { b.style.display = 'none'; return; }
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText("http://localhost:8402/r/8c9c6e51-7c41-4806-a9d9-9a0690719063").then(function () {
+        b.textContent = 'Copied ✓';
+        setTimeout(function () { b.textContent = 'Copy link'; }, 1600);
+      });
+    });
+  })();
+</script>
 </body>
 </html>"
 `;

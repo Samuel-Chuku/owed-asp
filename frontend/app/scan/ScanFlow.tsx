@@ -263,11 +263,11 @@ export function ScanFlow() {
               or your lawyer.
             </div>
             <div className="deliver deliver-pad">
-              <a className="btn btn-hot btn-big" href={audit.reportUrl}>
-                View the audit statement
+              <a className="btn btn-hot btn-big" href={audit.reportUrl} target="_blank" rel="noopener">
+                View the audit statement ↗
               </a>
-              <a className="btn btn-go btn-big" href={audit.kitUrl}>
-                Open the claim kit
+              <a className="btn btn-go btn-big" href={audit.kitUrl} target="_blank" rel="noopener">
+                Open the claim kit ↗
               </a>
             </div>
           </div>

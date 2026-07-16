@@ -1,9 +1,10 @@
 // Hosted report route rendering — implements report-rendering-instructions.md
 // against leak-report-template.html as the EXACT rendering target. Do not
-// redesign; the only permitted deviation from the template is the product
-// name (user decision: "Owed", was "Blackbox"). All layout/palette/sections
-// are the template's. Data binding follows the instructions' binding map;
-// prose comes from writeNarratives (narratives.ts).
+// redesign; permitted deviations from the template: the product name (user
+// decision: "Owed", was "Blackbox") and the save bar under the header band
+// (download / copy link / email-me actions — user request, Jul 16). All other
+// layout/palette/sections are the template's. Data binding follows the
+// instructions' binding map; prose comes from writeNarratives (narratives.ts).
 
 import type { ScanJob } from './jobs.js';
 import type { Estimate, Gap, LeakReport, MlcWork } from '../types.js';
@@ -83,6 +84,11 @@ export function renderReport(report: LeakReport): string {
 
   const scanCode = `${SCAN_PREFIX}-${report.generatedAt.slice(0, 10).replace(/-/g, '')}-${report.scanId.slice(0, 4).toUpperCase()}`;
   const kitUrl = report.reportUrl.replace('/r/', '/k/');
+  const mailtoHref = `mailto:?subject=${encodeURIComponent(
+    `Your ${BRAND} royalty audit — ${artist.resolvedName}`,
+  )}&body=${encodeURIComponent(
+    `Audit statement: ${report.reportUrl}\nClaim kit: ${kitUrl}\n\nKeep this email — these links are the only way back to your report.`,
+  )}`;
   const isrcTrackCount = artist.tracks.filter((t) => t.isrcs.length > 0).length;
 
   // Card order mirrors the template: leaking works (worst first), then
@@ -200,6 +206,14 @@ export function renderReport(report: LeakReport): string {
   .band .brand span{color:var(--leak)}
   .band .meta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#9C937F;text-align:right;line-height:1.6}
 
+  /* Save bar (approved deviation, Jul 16 — download / copy / email actions) */
+  .savebar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--paper-dim);border-bottom:1px solid var(--line);padding:10px 28px}
+  .savebar .st{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .saveacts{display:flex;gap:8px;flex-wrap:wrap}
+  .sbtn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text);background:var(--paper);border:1px solid var(--text);border-radius:3px;padding:5px 10px;text-decoration:none;cursor:pointer}
+  .sbtn:hover{background:#FBF7EC}
+  .sbtn:focus-visible{outline:3px solid var(--leak);outline-offset:2px}
+
   /* Verdict */
   .verdict{padding:36px 28px 28px;border-bottom:1px solid var(--line)}
   .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
@@ -268,6 +282,14 @@ export function renderReport(report: LeakReport): string {
     <div class="brand">OW<span>ED</span> · ROYALTY AUDIT</div>
     <div class="meta">SCAN ${esc(scanCode)}<br>GENERATED ${esc(fmtDate(report.generatedAt))} · SOURCES: ${esc(sourcesLine(gaps))}</div>
   </div>
+  <div class="savebar">
+    <span class="st">Save this report — it lives only at this link</span>
+    <span class="saveacts">
+      <a class="sbtn" href="?download=1">Download</a>
+      <button class="sbtn" id="copy-link" type="button">Copy link</button>
+      <a class="sbtn" href="${esc(mailtoHref)}">Email me the link</a>
+    </span>
+  </div>
   ${confidenceBanner}
   <div class="verdict">
     <div class="eyebrow">Artist · ${esc(artist.resolvedName)} — catalog verified by ISRC (${isrcTrackCount} tracks)</div>
@@ -317,6 +339,19 @@ ${clean.map(workCard).join('\n')}
   </div>
 
 </div>
+<script>
+  (function () {
+    var b = document.getElementById('copy-link');
+    if (!b) return;
+    if (!navigator.clipboard) { b.style.display = 'none'; return; }
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(${JSON.stringify(report.reportUrl)}).then(function () {
+        b.textContent = 'Copied ✓';
+        setTimeout(function () { b.textContent = 'Copy link'; }, 1600);
+      });
+    });
+  })();
+</script>
 </body>
 </html>`;
 }

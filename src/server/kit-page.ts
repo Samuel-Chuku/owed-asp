@@ -18,7 +18,25 @@ const esc = (s: unknown): string =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-export function renderKitHtml(kit: ClaimKit, scanId = ''): string {
+export function renderKitHtml(kit: ClaimKit, scanId = '', baseUrl = ''): string {
+  const kitUrl = baseUrl && scanId ? `${baseUrl}/k/${scanId}` : '';
+  const reportUrl = baseUrl && scanId ? `${baseUrl}/r/${scanId}` : '';
+  const mailtoHref = kitUrl
+    ? `mailto:?subject=${encodeURIComponent(`Your Owed claim kit — ${kit.artist}`)}&body=${encodeURIComponent(
+        `Claim kit: ${kitUrl}\nAudit statement: ${reportUrl}\n\nKeep this email — these links are the only way back to your report.`,
+      )}`
+    : '';
+  const savebar = kitUrl
+    ? `
+  <div class="savebar">
+    <span class="st">Save this kit — it lives only at this link</span>
+    <span class="saveacts">
+      <a class="sbtn" href="?download=1">Download</a>
+      <button class="sbtn" id="copy-link" type="button">Copy link</button>
+      <a class="sbtn" href="${esc(mailtoHref)}">Email me the link</a>
+    </span>
+  </div>`
+    : '';
   const steps = kit.steps
     .map(
       (s, i) => `
@@ -72,6 +90,14 @@ export function renderKitHtml(kit: ClaimKit, scanId = ''): string {
   .band .brand{font-family:var(--font-display);font-weight:900;font-size:1.05rem;letter-spacing:.02em}
   .band .brand span{color:var(--leak)}
   .band .meta{font-family:var(--font-mono);font-size:.68rem;color:#9C937F;text-align:right;line-height:1.6}
+
+  /* Save bar (matches the report page's, user request Jul 16) */
+  .savebar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--paper-dim);border-bottom:1px solid var(--line);padding:10px 28px}
+  .savebar .st{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .saveacts{display:flex;gap:8px;flex-wrap:wrap}
+  .sbtn{font-family:var(--font-mono);font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text);background:var(--paper);border:1px solid var(--text);border-radius:3px;padding:5px 10px;text-decoration:none;cursor:pointer}
+  .sbtn:hover{background:#FBF7EC}
+  .sbtn:focus-visible{outline:3px solid var(--leak);outline-offset:2px}
 
   .head{padding:36px 28px 24px;border-bottom:1px solid var(--line)}
   .eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
@@ -132,6 +158,7 @@ export function renderKitHtml(kit: ClaimKit, scanId = ''): string {
     <div class="brand">OW<span>ED</span> · CLAIM KIT</div>
     <div class="meta">COMPANION TO THE ROYALTY AUDIT<br>GENERATED ${esc(new Date(kit.generatedAt).toUTCString().slice(5, 16).toUpperCase())}</div>
   </div>
+${savebar}
 
   <div class="head">
     <div class="eyebrow">Artist · ${esc(kit.artist)} — ordered fix plan</div>
@@ -181,6 +208,17 @@ ${checklist}
       });
     });
     paint();
+  })();
+  (function () {
+    var b = document.getElementById('copy-link');
+    if (!b) return;
+    if (!navigator.clipboard) { b.style.display = 'none'; return; }
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(${JSON.stringify(kitUrl)} || location.href.split('?')[0]).then(function () {
+        b.textContent = 'Copied ✓';
+        setTimeout(function () { b.textContent = 'Copy link'; }, 1600);
+      });
+    });
   })();
 </script>
 </body>

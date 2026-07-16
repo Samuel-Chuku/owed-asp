@@ -22,6 +22,17 @@ import { initX402Sdk, type SdkGate } from './payment-sdk.js';
 import { renderReportHtml } from './report.js';
 import { renderKitHtml } from './kit-page.js';
 import { generateClaimKit } from '../claim-kit/index.js';
+import type { ScanJob } from './jobs.js';
+
+/** Filename fragment for ?download=1: artist slug when the scan completed, scanId prefix otherwise. */
+function downloadSlug(job: ScanJob): string {
+  const name = job.result?.status === 'complete' ? job.result.artist.resolvedName : '';
+  const slug = name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+  return slug || job.scanId.slice(0, 8);
+}
 
 const ROOT = join(import.meta.dirname, '..', '..');
 try {
@@ -299,21 +310,42 @@ async function main() {
   });
 
   // Hosted report page — the shareable artifact (§5 step 6).
-  app.get<{ Params: { scanId: string } }>('/r/:scanId', async (request, reply) => {
-    const job = jobs.get(request.params.scanId);
-    if (!job) return reply.code(404).type('text/html').send('<h1>Report not found</h1>');
-    return reply.type('text/html').send(renderReportHtml(job, BASE_URL));
-  });
+  // ?download=1 serves the same self-contained HTML as a file download.
+  app.get<{ Params: { scanId: string }; Querystring: { download?: string } }>(
+    '/r/:scanId',
+    async (request, reply) => {
+      const job = jobs.get(request.params.scanId);
+      if (!job) return reply.code(404).type('text/html').send('<h1>Report not found</h1>');
+      if (request.query.download !== undefined) {
+        reply.header(
+          'Content-Disposition',
+          `attachment; filename="owed-audit-${downloadSlug(job)}.html"`,
+        );
+      }
+      return reply.type('text/html').send(renderReportHtml(job, BASE_URL));
+    },
+  );
 
   // Hosted claim-kit page (paid tool returns this URL; the page itself is
   // unguessable — scanIds are UUIDs — matching the report-page model).
-  app.get<{ Params: { scanId: string } }>('/k/:scanId', async (request, reply) => {
-    const job = jobs.get(request.params.scanId);
-    if (!job || job.status !== 'complete' || job.result?.status !== 'complete') {
-      return reply.code(404).type('text/html').send('<h1>Claim kit not found</h1>');
-    }
-    return reply.type('text/html').send(renderKitHtml(generateClaimKit(job.result), job.scanId));
-  });
+  app.get<{ Params: { scanId: string }; Querystring: { download?: string } }>(
+    '/k/:scanId',
+    async (request, reply) => {
+      const job = jobs.get(request.params.scanId);
+      if (!job || job.status !== 'complete' || job.result?.status !== 'complete') {
+        return reply.code(404).type('text/html').send('<h1>Claim kit not found</h1>');
+      }
+      if (request.query.download !== undefined) {
+        reply.header(
+          'Content-Disposition',
+          `attachment; filename="owed-claim-kit-${downloadSlug(job)}.html"`,
+        );
+      }
+      return reply
+        .type('text/html')
+        .send(renderKitHtml(generateClaimKit(job.result), job.scanId, BASE_URL));
+    },
+  );
 
   // Free quick check for the marketing site (the $1 tool is the ASP surface;
   // the site's first check is free by the Jul 10 frontend decision — the
