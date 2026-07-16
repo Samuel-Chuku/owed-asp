@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 const LISTING = process.env.NEXT_PUBLIC_LISTING_URL;
 
@@ -19,13 +20,16 @@ export function Nav({ current }: { current?: 'home' | 'scan' }) {
           <Link href="/#rates">Rates</Link>
           <Link href="/#agents">For agents</Link>
         </nav>
-        <Link
-          className="btn btn-hot"
-          href="/scan"
-          aria-current={current === 'scan' ? 'page' : undefined}
-        >
-          Run a scan
-        </Link>
+        <div className="nav-acts">
+          <ThemeToggle />
+          <Link
+            className="btn btn-hot"
+            href="/scan"
+            aria-current={current === 'scan' ? 'page' : undefined}
+          >
+            Run a scan
+          </Link>
+        </div>
       </div>
     </header>
   );

@@ -24,10 +24,21 @@ export const metadata: Metadata = {
     'Owed scans the public US songwriter registry for money being collected on your songs that is not reaching anyone. Free quick check; verified against your actual recordings.',
 };
 
+// Applies the saved theme before first paint so there is no light-mode flash;
+// with no saved choice, the CSS prefers-color-scheme default takes over.
+const themeInit = `try{var t=localStorage.getItem('owed-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${hanken.variable} ${mono.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${hanken.variable} ${mono.variable}`}
+      suppressHydrationWarning
+    >
+      <body>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+        {children}
+      </body>
     </html>
   );
 }
