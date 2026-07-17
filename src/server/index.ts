@@ -78,14 +78,17 @@ async function executeScan(scanId: string): Promise<void> {
 
 // ---- MCP server factory (stateless: fresh instance per request) ----
 
-function buildMcpServer(paymentHeader: string | undefined): McpServer {
+function buildMcpServer(paymentHeader: string | undefined, demoBypass = false): McpServer {
   const server = new McpServer({ name: 'owed-royalty-scanner', version: '0.1.0' });
 
   // Paid-tool wrapper: consult the x402 gate before doing any work. In MCP,
   // gate failures surface as isError content with the 402 challenge attached
-  // so agent clients (per the x402 spec) can pay and retry.
+  // so agent clients (per the x402 spec) can pay and retry. Owner demo calls
+  // (verified against PAYMENT_DEMO_KEY at the HTTP layer) skip the gate —
+  // the HTTP layer is the only place the demo header is checked.
   const gated = (tool: PaidTool, handler: (args: any) => Promise<any>) => {
     return async (args: any) => {
+      if (demoBypass) return handler(args);
       const gate = await gatePaidCall(tool, paymentCfg, paymentHeader);
       if (!gate.ok) {
         return {
@@ -428,7 +431,7 @@ async function main() {
     }
 
     // Stateless mode: fresh server + transport per request, no session ids.
-    const server = buildMcpServer(paymentHeader);
+    const server = buildMcpServer(paymentHeader, isDemoCall);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
     reply.hijack();
     await server.connect(transport);
