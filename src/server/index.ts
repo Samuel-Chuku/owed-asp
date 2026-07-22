@@ -397,6 +397,11 @@ async function main() {
   });
 
   app.post('/mcp', async (request, reply) => {
+    // Payment challenges and paid responses must never be cached — a shared
+    // cache in front could serve one caller's challenge (or paid result) to
+    // another. Set on the raw response so it survives reply.hijack() below.
+    reply.raw.setHeader('Cache-Control', 'no-store');
+
     const paymentHeader =
       (request.headers['x-payment'] as string | undefined) ??
       (request.headers['payment-signature'] as string | undefined);

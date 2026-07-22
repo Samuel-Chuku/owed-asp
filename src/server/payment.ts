@@ -119,7 +119,7 @@ export function gateMcpHttp(
     const { headerValue } = buildChallenge(tool, cfg, resourceUrl);
     return {
       status: 402,
-      headers: { 'PAYMENT-REQUIRED': headerValue },
+      headers: { 'PAYMENT-REQUIRED': headerValue, 'Cache-Control': 'no-store' },
       body: { error: 'payment_required', tool, priceUsd: PRICES_USD[tool] },
     };
   }
@@ -182,6 +182,7 @@ export async function gatePaidCall(
       httpStatus: 402,
       headers: {
         'PAYMENT-REQUIRED': Buffer.from(JSON.stringify(challenge)).toString('base64'),
+        'Cache-Control': 'no-store',
       },
       body: { error: 'payment_required', tool, priceUsd: PRICES_USD[tool] },
     };
