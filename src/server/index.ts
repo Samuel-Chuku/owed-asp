@@ -42,6 +42,8 @@ try {
 }
 const PORT = Number(process.env.PORT ?? 8402);
 const BASE_URL = process.env.PUBLIC_BASE_URL ?? `http://localhost:${PORT}`;
+// The apex serves the API/MCP only; the human-facing site lives on its own host.
+const CONSOLE_URL = process.env.CONSOLE_URL ?? 'https://console.useowed.xyz';
 
 const jobs = new JobStore(join(ROOT, 'data', 'jobs'));
 const mlcClient = defaultMlcClient(ROOT);
@@ -268,6 +270,12 @@ async function main() {
   app.addContentTypeParser('*', { parseAs: 'string' }, lenientJson);
 
   app.get('/healthz', async () => ({ ok: true, service: 'owed-asp', paymentMode: paymentCfg.mode }));
+
+  // Bare apex is a landing surface for humans, not an API route — send them to
+  // the console. Exact-path only: /mcp, /r, /k, /api and the rest are untouched.
+  // 302 (not 301) so a real page can be served here later without fighting
+  // browser-cached permanent redirects.
+  app.get('/', async (_request, reply) => reply.redirect(CONSOLE_URL, 302));
 
   // Free full-scan endpoints for the frontend (user decision, Jul 15: every
   // step on the site is free until deliberately gated; the paid surface is
