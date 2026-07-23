@@ -108,6 +108,28 @@ describe('Muchuzi (Rema Namakula) — even administered catalogs leak', () => {
   });
 });
 
+describe('fully registered works (the BENIN BOYS / mega-artist artifact)', () => {
+  // Same work, but with 100% of shares registered: a writer missing from the
+  // represented list is an MLC data-linkage artifact, not money going unpaid.
+  const fullShares: MlcWork = { ...speedometer, totalShares: 100 };
+  const gaps = detectWorkGaps(fullShares);
+
+  it('downgrades writer_no_publisher to warning at 100% shares', () => {
+    const g = gaps.filter((x) => x.kind === 'writer_no_publisher');
+    expect(g).toHaveLength(1);
+    expect(g[0].severity).toBe('warning');
+  });
+
+  it('does not flag partial_shares at 100%', () => {
+    expect(gaps.find((x) => x.kind === 'partial_shares')).toBeUndefined();
+  });
+
+  it('count-mode leak score weighs warning-only works at 25%', () => {
+    const artist = artistWith([{ title: 'Speedometer', isrcs: [speedometerIsrc] }]);
+    expect(leakScore(gaps, [fullShares], artist)).toBe(25);
+  });
+});
+
 describe('unregistered catalog tracks', () => {
   const evidence = { url: 'https://portal.themlc.com/search#work', snapshotPath: 'x' };
 
@@ -126,6 +148,22 @@ describe('unregistered catalog tracks', () => {
     const artist = artistWith([{ title: 'No ISRC Track', isrcs: [] }]);
     const gaps = detectUnregisteredTracks(artist, [speedometer], () => evidence);
     expect(gaps).toHaveLength(0);
+  });
+
+  it('downgrades recent releases to warning — registration lag, not a leak', () => {
+    const now = Date.parse('2026-07-23');
+    const artist = artistWith([
+      { title: 'Fresh Cut', isrcs: ['NG0000000003'] },
+      { title: 'Old Miss', isrcs: ['NG0000000004'] },
+    ]);
+    artist.tracks[0].releaseDate = '2025-12-05'; // ~7.5 months old
+    artist.tracks[1].releaseDate = '2023-11-10';
+    const gaps = detectUnregisteredTracks(artist, [speedometer], () => evidence, now);
+    const fresh = gaps.find((g) => g.detail.includes('Fresh Cut'))!;
+    const old = gaps.find((g) => g.detail.includes('Old Miss'))!;
+    expect(fresh.severity).toBe('warning');
+    expect(fresh.detail).toContain('registration and matching lag');
+    expect(old.severity).toBe('critical');
   });
 });
 

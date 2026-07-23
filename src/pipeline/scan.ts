@@ -3,12 +3,13 @@
 // from the gap engine, all money from the estimator.
 
 import { join } from 'node:path';
-import { MlcClient, toMlcWork, type RawWork } from '../crawlers/mlc.js';
+import { MlcClient, toMlcWork, type RawRecording, type RawWork } from '../crawlers/mlc.js';
 import { resolveArtist, type ArtistCandidate } from '../identity/index.js';
 import {
   detectUnregisteredTracks,
   detectWorkGaps,
   leakScore,
+  REGISTRATION_LAG_MS,
   verifyWorksByIsrc,
 } from '../gap-engine/index.js';
 import { estimateWork } from '../estimator/index.js';
@@ -47,13 +48,19 @@ export async function runScan(
     /** Enables stream counts + dollar-range estimates when set. */
     youtubeApiKey?: string;
     youtubeCacheDir?: string;
+    /**
+     * 'quick' = sampled preview (quick check): capped catalog fetch, one page
+     * of matched recordings per work. 'full' (default) crawls everything.
+     */
+    depth?: 'quick' | 'full';
   },
 ): Promise<ScanResult> {
   const progress = opts.onProgress ?? (() => {});
   const maxTracks = opts.maxTracks ?? 25;
+  const quick = opts.depth === 'quick';
 
   progress('resolving identity (MusicBrainz + Deezer)');
-  const resolved = await resolveArtist(artistName);
+  const resolved = await resolveArtist(artistName, { quickCatalog: quick });
   if (resolved.status === 'not_found') return { status: 'not_found', query: artistName };
   if (resolved.status === 'ambiguous') {
     return { status: 'ambiguous', query: artistName, candidates: resolved.candidates };
@@ -61,11 +68,41 @@ export async function runScan(
   const artist = resolved.artist;
 
   const withIsrcs = artist.tracks.filter((t) => t.isrcs.length > 0);
-  const titles = [...new Set(withIsrcs.map((t) => t.title))].slice(0, maxTracks);
+  // Spend the title budget on tracks old enough to give a determinate
+  // registered/unregistered answer first; releases still inside the
+  // registration-lag window can only ever come back as "monitor" warnings.
+  const lagCutoff = Date.now() - REGISTRATION_LAG_MS;
+  const determinate = (t: { releaseDate?: string }) =>
+    !t.releaseDate || Date.parse(t.releaseDate) < lagCutoff;
+  const ordered = [...withIsrcs.filter(determinate), ...withIsrcs.filter((t) => !determinate(t))];
+  const titles = [...new Set(ordered.map((t) => t.title))].slice(0, maxTracks);
   const artistIsrcs = new Set(withIsrcs.flatMap((t) => t.isrcs.map((i) => i.toUpperCase())));
 
-  const candidates = new Map<string, { raw: RawWork; snapshotPath: string }>();
+  const candidates = new Map<
+    string,
+    { raw: RawWork; snapshotPath: string; recordings?: RawRecording[] }
+  >();
   const titleSnapshots = new Map<string, string>();
+  // ISRCs of the artist's already covered by some candidate work — used to
+  // decide whether a title still needs the deep check below.
+  const coveredIsrcs = new Set<string>();
+  // Name tokens (artist + aliases, e.g. legal names) for ranking which
+  // exact-title works to deep-check first. Selection heuristic only — the
+  // actual verification below stays ISRC-based (non-negotiable 2).
+  const nameTokens = new Set(
+    [artist.resolvedName, ...artist.aliases]
+      .flatMap((n) => n.toUpperCase().split(/[^A-Z0-9]+/))
+      .filter((t) => t.length >= 3),
+  );
+  const nameSignal = (w: RawWork): number => {
+    const inTokens = (s: string | null | undefined) =>
+      (s ?? '').toUpperCase().split(/[^A-Z0-9]+/).some((t) => t.length >= 3 && nameTokens.has(t));
+    let score = 0;
+    if ((w.matchedRecordings?.recordings ?? []).some((r) => inTokens(r.recordingDisplayArtistName)))
+      score += 2;
+    if ((w.writers ?? []).some((wr) => inTokens(wr.fullName))) score += 1;
+    return score;
+  };
   let searchSnapshot = '';
   for (const [i, title] of titles.entries()) {
     progress(`searching MLC ${i + 1}/${titles.length}: "${title}"`);
@@ -73,19 +110,56 @@ export async function runScan(
     searchSnapshot ||= res.snapshotPath;
     titleSnapshots.set(title, res.snapshotPath);
     for (const raw of res.works) {
-      const hit = (raw.matchedRecordings?.recordings ?? []).some(
-        (r) => r.isrc && artistIsrcs.has(r.isrc.toUpperCase()),
-      );
-      if (hit && !candidates.has(raw.songCode)) {
+      const hits = (raw.matchedRecordings?.recordings ?? [])
+        .map((r) => r.isrc?.toUpperCase())
+        .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
+      if (hits.length && !candidates.has(raw.songCode)) {
         candidates.set(raw.songCode, { raw, snapshotPath: res.snapshotPath });
+      }
+      for (const x of hits) coveredIsrcs.add(x);
+    }
+
+    // Deep check: the search result embeds only a work's first 10 matched
+    // recordings, so big works (mega-artist catalogs, heavily covered songs)
+    // fail the cheap ISRC test above and would be falsely flagged as
+    // unregistered. For exact-title works, look at the top page of the full
+    // matched-recordings list (ordered by matched royalty amount) before
+    // giving up. Verification stays ISRC-only (non-negotiable 2).
+    const titleIsrcs = withIsrcs
+      .filter((t) => t.title.toUpperCase() === title.toUpperCase())
+      .flatMap((t) => t.isrcs.map((x) => x.toUpperCase()));
+    if (!titleIsrcs.some((x) => coveredIsrcs.has(x))) {
+      const exactMatches = res.works
+        .filter(
+          (w) =>
+            w.title?.trim().toUpperCase() === title.toUpperCase() && !candidates.has(w.songCode),
+        )
+        // Highest artist-name signal first (display artist on embedded
+        // recordings, then writer names) so the 3-call budget lands on the
+        // works most likely to be this artist's.
+        .sort((a, b) => nameSignal(b) - nameSignal(a))
+        .slice(0, 3);
+      for (const raw of exactMatches) {
+        const { recordings } = await opts.client.fetchMatchedRecordings(raw.songCode, 1);
+        const hits = recordings
+          .map((r) => r.isrc?.toUpperCase())
+          .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
+        if (hits.length) {
+          candidates.set(raw.songCode, { raw, snapshotPath: res.snapshotPath, recordings });
+          for (const x of hits) coveredIsrcs.add(x);
+          break;
+        }
       }
     }
   }
 
   progress(`fetching matched recordings for ${candidates.size} candidate works`);
   const works: MlcWork[] = [];
-  for (const { raw, snapshotPath } of candidates.values()) {
-    const { recordings } = await opts.client.fetchMatchedRecordings(raw.songCode);
+  for (const { raw, snapshotPath, recordings: prefetched } of candidates.values()) {
+    const recordings =
+      quick && prefetched
+        ? prefetched
+        : (await opts.client.fetchMatchedRecordings(raw.songCode, quick ? 1 : 20)).recordings;
     works.push(toMlcWork(raw, recordings, snapshotPath));
   }
   const { verified, unverified } = verifyWorksByIsrc(works, artist);

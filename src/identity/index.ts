@@ -106,20 +106,24 @@ async function dzFetch(path: string): Promise<any> {
   return json;
 }
 
-export async function fetchDeezerCatalog(artistName: string): Promise<CanonicalTrack[]> {
+export async function fetchDeezerCatalog(
+  artistName: string,
+  maxAlbums = Infinity,
+): Promise<CanonicalTrack[]> {
   const search = await dzFetch(`/search/artist?q=${encodeURIComponent(artistName)}&limit=5`);
   const candidates = (search.data ?? []) as { id: number; name: string }[];
   const artist =
     candidates.find((a) => a.name.toUpperCase() === artistName.toUpperCase()) ?? candidates[0];
   if (!artist) return [];
 
-  const albums: { id: number; releaseDate?: string }[] = [];
+  let albums: { id: number; releaseDate?: string }[] = [];
   let next = `/artist/${artist.id}/albums?limit=100`;
-  while (next) {
+  while (next && albums.length < maxAlbums) {
     const page = await dzFetch(next);
     for (const a of page.data ?? []) albums.push({ id: a.id, releaseDate: a.release_date });
     next = page.next ? page.next.replace(DEEZER, '') : '';
   }
+  albums = albums.slice(0, maxAlbums);
 
   const byTitle = new Map<string, { title: string; isrcs: Set<string>; releaseDate?: string }>();
   for (const album of albums) {
@@ -163,7 +167,17 @@ export function mergeCatalogs(...lists: CanonicalTrack[][]): CanonicalTrack[] {
   return [...byTitle.values()];
 }
 
-export async function resolveArtist(queryName: string): Promise<
+export async function resolveArtist(
+  queryName: string,
+  opts: {
+    /**
+     * Sampled-preview mode (quick check): Deezer-only catalog capped at the
+     * 25 newest albums, MusicBrainz used for identity only. Mega-artist
+     * catalogs (100s of albums) otherwise take minutes to enumerate.
+     */
+    quickCatalog?: boolean;
+  } = {},
+): Promise<
   | { status: 'resolved'; artist: CanonicalArtist }
   | { status: 'ambiguous'; candidates: ArtistCandidate[] }
   | { status: 'not_found' }
@@ -178,8 +192,8 @@ export async function resolveArtist(queryName: string): Promise<
   }
 
   const [mbTracks, dzTracks] = await Promise.all([
-    fetchArtistRecordings(top.mbid),
-    fetchDeezerCatalog(top.name),
+    opts.quickCatalog ? Promise.resolve([]) : fetchArtistRecordings(top.mbid),
+    fetchDeezerCatalog(top.name, opts.quickCatalog ? 25 : Infinity),
   ]);
   const tracks = mergeCatalogs(mbTracks, dzTracks);
   return {

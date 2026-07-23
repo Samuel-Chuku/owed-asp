@@ -46,9 +46,12 @@ export function detectWorkGaps(work: MlcWork): Gap[] {
   );
   for (const writer of work.writers) {
     if (!representedNames.has(writer.name.toUpperCase())) {
+      // When 100% of shares are registered, a writer missing from every
+      // publisher's represented list is usually an MLC data-linkage artifact
+      // (the BENIN BOYS case), not money going unpaid — warning, not critical.
       gaps.push({
         kind: 'writer_no_publisher',
-        severity: 'critical',
+        severity: work.totalShares >= 100 ? 'warning' : 'critical',
         workRef: work.mlcSongCode,
         detail: `Writer ${writer.name} (${writer.role}) on "${work.title}" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.`,
         evidence,
@@ -68,15 +71,23 @@ export function detectWorkGaps(work: MlcWork): Gap[] {
   return gaps;
 }
 
+/** Registration + DSP matching for new releases routinely lags this long. */
+export const REGISTRATION_LAG_MS = 365 * 24 * 3600 * 1000;
+
 /**
  * Catalog tracks with no ISRC-verified MLC work at all: 100% unregistered.
  * Only flags tracks that carry at least one ISRC (otherwise we cannot apply
- * the verification rule, so we stay silent rather than guess).
+ * the verification rule, so we stay silent rather than guess). Tracks
+ * released within the registration-lag window are flagged as warnings, not
+ * critical — a months-old song absent from the registry is usually normal
+ * registration/matching lag, not a confirmed leak (the Ed Sheeran lesson:
+ * calling a fresh album cut "100% leaking" reads as a false claim).
  */
 export function detectUnregisteredTracks(
   artist: CanonicalArtist,
   verifiedWorks: MlcWork[],
   evidenceFor: (trackTitle: string) => { url: string; snapshotPath: string },
+  now = Date.now(),
 ): Gap[] {
   const registeredIsrcs = new Set(
     verifiedWorks
@@ -89,10 +100,14 @@ export function detectUnregisteredTracks(
     if (track.isrcs.length === 0) continue;
     const registered = track.isrcs.some((i) => registeredIsrcs.has(i.toUpperCase()));
     if (!registered) {
+      const releasedMs = track.releaseDate ? Date.parse(track.releaseDate) : NaN;
+      const recent = Number.isFinite(releasedMs) && now - releasedMs < REGISTRATION_LAG_MS;
       gaps.push({
         kind: 'work_not_registered',
-        severity: 'critical',
-        detail: `"${track.title}" (ISRC ${track.isrcs[0]}) has no registration in the MLC database under ${artist.resolvedName}'s verified catalog. 100% of its US mechanical royalties accrue as unclaimed.`,
+        severity: recent ? 'warning' : 'critical',
+        detail: recent
+          ? `"${track.title}" (ISRC ${track.isrcs[0]}, released ${track.releaseDate}) has no registration found in the MLC database under ${artist.resolvedName}'s verified catalog yet. Releases this recent are often still inside the registry's normal registration and matching lag — monitor rather than treat as a confirmed leak.`
+          : `"${track.title}" (ISRC ${track.isrcs[0]}) has no registration in the MLC database under ${artist.resolvedName}'s verified catalog. 100% of its US mechanical royalties accrue as unclaimed.`,
         evidence: evidenceFor(track.title),
       });
     }
@@ -192,19 +207,29 @@ export function leakScore(
       severityByWork.set(g.workRef, 'warning');
     }
   }
-  // Unregistered tracks are 100%-leaking by definition; weigh them as critical.
-  const unregisteredTitles = gaps
+  // Unregistered tracks weigh by their severity: confirmed absences are
+  // 100%-leaking (critical ×1), recent releases inside the registration-lag
+  // window count at the warning weight.
+  const unregistered = gaps
     .filter((g) => g.kind === 'work_not_registered')
-    .map((g) => /^"(.+?)"/.exec(g.detail)?.[1] ?? '');
+    .map((g) => ({
+      title: /^"(.+?)"/.exec(g.detail)?.[1] ?? '',
+      weight: g.severity === 'critical' ? 1 : 0.25,
+    }))
+    .filter((u) => u.title);
 
   const totalStreams =
     artist.tracks.reduce((s, t) => s + Math.max(0, ...t.streams.map((x) => x.count), 0), 0);
 
   if (totalStreams === 0) {
-    // No stream data: fraction of catalog affected.
+    // No stream data: fraction of catalog affected, warning-only works at 25%
+    // (same weighting as the stream-based path below).
+    const severities = [...severityByWork.values()];
     const affected =
-      new Set([...severityByWork.keys()]).size + unregisteredTitles.filter(Boolean).length;
-    const total = works.length + unregisteredTitles.filter(Boolean).length;
+      severities.filter((s) => s === 'critical').length +
+      0.25 * severities.filter((s) => s === 'warning').length +
+      unregistered.reduce((s, u) => s + u.weight, 0);
+    const total = works.length + unregistered.length;
     return total === 0 ? 0 : Math.round(100 * Math.min(1, affected / total));
   }
 
@@ -214,8 +239,8 @@ export function leakScore(
     if (!sev) continue;
     weighted += streamsOf(work.title) * (sev === 'critical' ? 1 : 0.25);
   }
-  for (const title of unregisteredTitles) {
-    if (title) weighted += streamsOf(title);
+  for (const u of unregistered) {
+    weighted += streamsOf(u.title) * u.weight;
   }
   return Math.round(100 * Math.min(1, weighted / totalStreams));
 }

@@ -80,17 +80,18 @@ async function executeScan(scanId: string): Promise<void> {
 
 // ---- MCP server factory (stateless: fresh instance per request) ----
 
-function buildMcpServer(paymentHeader: string | undefined, demoBypass = false): McpServer {
+function buildMcpServer(paymentHeader: string | undefined, gateSatisfied = false): McpServer {
   const server = new McpServer({ name: 'owed-royalty-scanner', version: '0.1.0' });
 
   // Paid-tool wrapper: consult the x402 gate before doing any work. In MCP,
   // gate failures surface as isError content with the 402 challenge attached
-  // so agent clients (per the x402 spec) can pay and retry. Owner demo calls
-  // (verified against PAYMENT_DEMO_KEY at the HTTP layer) skip the gate —
-  // the HTTP layer is the only place the demo header is checked.
+  // so agent clients (per the x402 spec) can pay and retry. The gate is
+  // skipped when the HTTP layer already satisfied it: owner demo calls
+  // (verified against PAYMENT_DEMO_KEY — checked only at the HTTP layer) and
+  // payments the OKX SDK has verified + settled on-chain.
   const gated = (tool: PaidTool, handler: (args: any) => Promise<any>) => {
     return async (args: any) => {
-      if (demoBypass) return handler(args);
+      if (gateSatisfied) return handler(args);
       const gate = await gatePaidCall(tool, paymentCfg, paymentHeader);
       if (!gate.ok) {
         return {
@@ -118,7 +119,7 @@ function buildMcpServer(paymentHeader: string | undefined, demoBypass = false): 
     },
     gated('royalty_quick_check', async ({ artistName }: { artistName: string }) => {
       // Sampled scan: few titles, cheap but honest.
-      const result = await runScan(artistName, { client: mlcClient, maxTracks: 5 });
+      const result = await runScan(artistName, { client: mlcClient, maxTracks: 5, depth: 'quick' });
       if (result.status !== 'complete') {
         return {
           content: [{ type: 'text' as const, text: JSON.stringify(result) }],
@@ -373,7 +374,7 @@ async function main() {
     }
     quickCheckLastByIp.set(ip, Date.now());
     try {
-      const result = await runScan(artist, { client: mlcClient, maxTracks: 5 });
+      const result = await runScan(artist, { client: mlcClient, maxTracks: 5, depth: 'quick' });
       if (result.status !== 'complete') return reply.send(result);
       const byKind: Record<string, number> = {};
       for (const g of result.gaps) byKind[g.kind] = (byKind[g.kind] ?? 0) + 1;
@@ -425,6 +426,12 @@ async function main() {
     const demoKey = process.env.PAYMENT_DEMO_KEY;
     const isDemoCall = Boolean(demoKey) && request.headers['x-owed-demo'] === demoKey;
 
+    // Set once the SDK gate has verified AND settled this call's payment
+    // on-chain — the in-band per-tool gate must then stand down, or a real
+    // payer gets charged and still receives a refusal (the bug behind the
+    // Jul 23 listing rejection: "results don't match capabilities").
+    let paymentSettled = false;
+
     if (!isDemoCall && paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
       if (sdkGate) {
         const result = await sdkGate.handle(request, paymentHeader);
@@ -437,6 +444,7 @@ async function main() {
         for (const [k, v] of Object.entries(result.settlementHeaders)) {
           reply.raw.setHeader(k, v);
         }
+        paymentSettled = true;
       } else {
         const gate = gateMcpHttp(request.body, paymentHeader, paymentCfg, `${BASE_URL}/mcp`);
         if (gate) return reply.code(gate.status).headers(gate.headers).send(gate.body);
@@ -444,7 +452,7 @@ async function main() {
     }
 
     // Stateless mode: fresh server + transport per request, no session ids.
-    const server = buildMcpServer(paymentHeader, isDemoCall);
+    const server = buildMcpServer(paymentHeader, isDemoCall || paymentSettled);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
     reply.hijack();
     await server.connect(transport);
