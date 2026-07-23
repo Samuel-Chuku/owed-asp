@@ -113,7 +113,7 @@ function buildMcpServer(paymentHeader: string | undefined, gateSatisfied = false
     {
       title: 'Royalty quick check',
       description:
-        `Quick leak check for an artist ($${PRICES_USD.royalty_quick_check}). Resolves the artist identity, samples their catalog against The MLC public database, and returns identity candidates, counts of registered works found, a leak-score preview, and gap counts by kind — no per-work details, estimates, or evidence (those come from royalty_leak_scan). ${DISCLAIMER}`,
+        `Sampled leak preview for an artist ($${PRICES_USD.royalty_quick_check}), typically under a minute. Resolves the artist identity, checks up to 5 of their most popular tracks against The MLC public database, and returns verified-work counts, a leak-score preview, and gap counts by kind — no per-work details, estimates, or evidence (those come from royalty_leak_scan). Anything the sample cannot confirm is flagged for the full scan, never asserted. ${DISCLAIMER}`,
       inputSchema: { artistName: z.string().min(1).describe('Artist stage name, e.g. "Shallipopi"') },
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
@@ -152,7 +152,7 @@ function buildMcpServer(paymentHeader: string | undefined, gateSatisfied = false
     {
       title: 'Full royalty leak scan',
       description:
-        `Full-catalog royalty leak scan ($${PRICES_USD.royalty_leak_scan}). Returns a scanId immediately; the crawl takes 2–10 minutes (respectful rate limits against public registries) — poll scan_status. The completed report contains ISRC-verified works, deterministic gap findings with evidence URLs, and a leak score. Scans are cached 24h per artist. ${DISCLAIMER}`,
+        `Royalty leak audit of an artist's most popular catalog tracks, up to 25 ($${PRICES_USD.royalty_leak_scan}). Returns a scanId immediately; the crawl takes 2–10 minutes (respectful rate limits against public registries) — poll scan_status. The completed report contains ISRC-verified works, deterministic gap findings with evidence URLs, dollar-range estimates, and a leak score. Scans are cached 24h per artist. ${DISCLAIMER}`,
       inputSchema: { artistName: z.string().min(1).describe('Artist stage name') },
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
