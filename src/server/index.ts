@@ -470,9 +470,33 @@ async function main() {
       }
     }
 
+    // x402 replay clients (OKX's included) send `Accept: application/json`
+    // only, but the MCP SDK transport 406s unless the client accepts BOTH
+    // application/json and text/event-stream — a paying caller would get 406
+    // instead of their deliverable (reported by OKX review, Jul 23). We
+    // respond in plain JSON (enableJsonResponse below), so accepting on the
+    // client's behalf is harmless for every caller. The SDK's Hono adapter
+    // reads rawHeaders (not the parsed object), so patch both.
+    const FULL_ACCEPT = 'application/json, text/event-stream';
+    request.raw.headers.accept = FULL_ACCEPT;
+    const rawHeaders = request.raw.rawHeaders;
+    let acceptPatched = false;
+    for (let i = 0; i < rawHeaders.length - 1; i += 2) {
+      if (rawHeaders[i].toLowerCase() === 'accept') {
+        rawHeaders[i + 1] = FULL_ACCEPT;
+        acceptPatched = true;
+      }
+    }
+    if (!acceptPatched) rawHeaders.push('Accept', FULL_ACCEPT);
+
     // Stateless mode: fresh server + transport per request, no session ids.
+    // enableJsonResponse: POST responses are plain application/json — required
+    // for JSON-only x402 clients, still spec-valid for streaming MCP clients.
     const server = buildMcpServer(paymentHeader, isDemoCall || paymentSettled || doomedCall);
-    const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
+    const transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: undefined,
+      enableJsonResponse: true,
+    });
     reply.hijack();
     await server.connect(transport);
     await transport.handleRequest(request.raw, reply.raw, request.body);
