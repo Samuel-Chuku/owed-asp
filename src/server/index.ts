@@ -17,7 +17,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { defaultMlcClient, runScan } from '../pipeline/scan.js';
 import { searchArtistCandidates } from '../identity/index.js';
 import { JobStore } from './jobs.js';
-import { gateMcpHttp, gatePaidCall, paidToolForBody, paymentConfigFromEnv, PRICES_USD, type PaidTool } from './payment.js';
+import { buildChallenge, gateMcpHttp, gatePaidCall, paidToolForBody, paymentConfigFromEnv, PRICES_USD, type PaidTool } from './payment.js';
 import { initX402Sdk, type SdkGate } from './payment-sdk.js';
 import { renderReportHtml } from './report.js';
 import { renderKitHtml } from './kit-page.js';
@@ -512,10 +512,15 @@ async function main() {
     });
   });
 
-  // Stateless server: sessions/SSE-resume are not offered. A browser GET gets
-  // a self-description instead of a bare error — listing reviewers click URLs.
-  app.get('/mcp', async (_req, reply) =>
-    reply.code(200).send({
+  // OKX's x402 validators probe with a bare `GET /mcp` and require HTTP 402 +
+  // PAYMENT-REQUIRED there (captured Jul 23 from x402-check against a local
+  // listener: GET, Accept: */*, no body; answering 402 made it report
+  // valid:true — a 200 info page here caused rejection #2, "not a valid x402
+  // service"). Stateless MCP clients treat a non-200 GET as "no SSE offered"
+  // (non-fatal), so the human-readable self-description survives in the 402
+  // body for reviewers who click the URL.
+  app.get('/mcp', async (_req, reply) => {
+    const info = {
       service: 'Owed — royalty leak scanner',
       protocol: 'MCP (streamable HTTP, stateless). Connect with an MCP client and POST JSON-RPC here.',
       tools: {
@@ -526,8 +531,22 @@ async function main() {
       },
       website: 'https://useowed.xyz',
       note: 'Owed is not affiliated with The MLC. Findings link to public registry records.',
-    }),
-  );
+    };
+    if (paymentCfg.mode !== 'x402' || !paymentCfg.payTo) {
+      return reply.code(200).send(info); // dev mode: plain info page
+    }
+    // Same shape as the SDK-built POST challenges (incl. the `error` field) —
+    // the exact structure x402-check validated against the capture listener.
+    const { challenge } = buildChallenge('royalty_quick_check', paymentCfg, `${BASE_URL}/mcp`);
+    const headerValue = Buffer.from(
+      JSON.stringify({ x402Version: 2, error: 'Payment required', ...challenge }),
+    ).toString('base64');
+    return reply
+      .code(402)
+      .header('PAYMENT-REQUIRED', headerValue)
+      .header('Cache-Control', 'no-store')
+      .send({ error: 'payment_required', ...info });
+  });
 
   await app.listen({ port: PORT, host: '0.0.0.0' });
   console.log(`Blackbox MCP server on :${PORT} (payment mode: ${paymentCfg.mode})`);
