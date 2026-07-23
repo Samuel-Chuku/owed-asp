@@ -73,10 +73,16 @@ export function buildChallenge(
   return { headerValue: Buffer.from(JSON.stringify(challenge)).toString('base64'), challenge };
 }
 
+/** Tools callable without payment. Everything else on tools/call is gated. */
+const FREE_TOOLS = new Set(['scan_status']);
+
 /**
  * Classify a request body: which paid tool is being invoked?
  * - a paid tools/call → that tool
  * - lifecycle traffic (initialize/tools/list/notifications) or free tools → null
+ * - tools/call with an UNKNOWN name → the cheapest tool (validators may probe
+ *   with the listing serviceName or a placeholder — they must see the 402,
+ *   not a 200 "tool not found")
  * - unparseable / non-RPC body (marketplace probe) → the cheapest tool
  */
 export function paidToolForBody(body: unknown): PaidTool | null {
@@ -84,7 +90,8 @@ export function paidToolForBody(body: unknown): PaidTool | null {
   if (rpc && typeof rpc.method === 'string') {
     if (rpc.method !== 'tools/call') return null;
     const name = rpc.params?.name;
-    return name && name in PRICES_USD ? (name as PaidTool) : null;
+    if (name && FREE_TOOLS.has(name)) return null;
+    return name && name in PRICES_USD ? (name as PaidTool) : 'royalty_quick_check';
   }
   return 'royalty_quick_check';
 }

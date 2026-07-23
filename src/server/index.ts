@@ -426,10 +426,16 @@ async function main() {
     const demoKey = process.env.PAYMENT_DEMO_KEY;
     const isDemoCall = Boolean(demoKey) && request.headers['x-owed-demo'] === demoKey;
 
-    // Never charge for a call that will certainly fail: obviously invalid
-    // arguments (unknown/incomplete scanId, empty artist) skip the payment
-    // gate and receive the tool's helpful error for free.
+    // Never charge for a call that will certainly fail: when a payment header
+    // IS present but the arguments are obviously invalid (unknown/incomplete
+    // scanId, empty artist), skip verification+settlement and return the
+    // tool's helpful error for free. This must ONLY apply to calls carrying a
+    // payment — unpaid calls (including argument-less probes from x402
+    // validators fishing for payment requirements) must still get the 402
+    // challenge, or the endpoint reads as unpayable (OKX x402-validate
+    // reported "200 with empty accepts", second rejection, Jul 23).
     const doomedCall = (() => {
+      if (!paymentHeader) return false;
       const rpc = request.body as
         | { method?: string; params?: { name?: string; arguments?: Record<string, unknown> } }
         | undefined;

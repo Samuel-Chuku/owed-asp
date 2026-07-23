@@ -40,6 +40,29 @@ describe('x402 HTTP gate', () => {
     });
   });
 
+  it('402s a tools/call with an unknown name — validators probe with placeholders', () => {
+    const gate = gateMcpHttp(
+      { method: 'tools/call', params: { name: 'Royalty Quick Check' } },
+      undefined,
+      cfg,
+      URL,
+    )!;
+    expect(gate.status).toBe(402);
+  });
+
+  it('402s a paid tools/call with no arguments — x402 discovery probes', () => {
+    const gate = gateMcpHttp(
+      { method: 'tools/call', params: { name: 'royalty_quick_check' } },
+      undefined,
+      cfg,
+      URL,
+    )!;
+    expect(gate.status).toBe(402);
+    const challenge = JSON.parse(Buffer.from(gate.headers['PAYMENT-REQUIRED'], 'base64').toString());
+    expect(challenge.accepts).toHaveLength(1);
+    expect(challenge.accepts[0].asset).toBe('0x779ded0c9e1022225f8e0630b35a9b54be713736');
+  });
+
   it('402s a bare probe POST (marketplace self-check)', () => {
     const gate = gateMcpHttp({}, undefined, cfg, URL)!;
     expect(gate.status).toBe(402);
