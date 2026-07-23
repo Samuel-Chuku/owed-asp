@@ -26,15 +26,23 @@ export function verifyWorksByIsrc(
   return { verified, unverified };
 }
 
+/**
+ * Below this many missing share-percent, a registration gap is hygiene, not
+ * headline money — severity drops to warning (a 99.25%-registered mega-hit
+ * is not "critically leaking").
+ */
+const MATERIAL_MISSING_SHARES = 5;
+
 /** Gaps on a single ISRC-verified registered work. */
 export function detectWorkGaps(work: MlcWork): Gap[] {
   const gaps: Gap[] = [];
   const evidence = { url: work.sourceUrl, snapshotPath: work.snapshotPath };
+  const effectivelyFull = work.totalShares >= 100 - MATERIAL_MISSING_SHARES;
 
   if (work.totalShares < 100) {
     gaps.push({
       kind: 'partial_shares',
-      severity: 'critical',
+      severity: effectivelyFull ? 'warning' : 'critical',
       workRef: work.mlcSongCode,
       detail: `"${work.title}" (MLC song code ${work.mlcSongCode}) has only ${work.totalShares}% of ownership shares registered. The remaining ${100 - work.totalShares}% of mechanical royalties on ${work.matchedRecordings.length} matched recordings accrues as unclaimed.`,
       evidence,
@@ -46,12 +54,12 @@ export function detectWorkGaps(work: MlcWork): Gap[] {
   );
   for (const writer of work.writers) {
     if (!representedNames.has(writer.name.toUpperCase())) {
-      // When 100% of shares are registered, a writer missing from every
-      // publisher's represented list is usually an MLC data-linkage artifact
-      // (the BENIN BOYS case), not money going unpaid — warning, not critical.
+      // On an (effectively) fully registered work, a writer missing from
+      // every publisher's represented list is usually an MLC data-linkage
+      // artifact (the BENIN BOYS case), not money going unpaid.
       gaps.push({
         kind: 'writer_no_publisher',
-        severity: work.totalShares >= 100 ? 'warning' : 'critical',
+        severity: effectivelyFull ? 'warning' : 'critical',
         workRef: work.mlcSongCode,
         detail: `Writer ${writer.name} (${writer.role}) on "${work.title}" has no publisher or administrator collecting on their behalf. Their share of mechanical royalties is not being paid out.`,
         evidence,
@@ -87,8 +95,17 @@ export function detectUnregisteredTracks(
   artist: CanonicalArtist,
   verifiedWorks: MlcWork[],
   evidenceFor: (trackTitle: string) => { url: string; snapshotPath: string },
-  now = Date.now(),
+  opts: {
+    now?: number;
+    /**
+     * Sampled preview (quick check): the shallow search cannot support a
+     * confident absence claim, so every miss is a warning that points to the
+     * full scan, never a critical "100% leaking" verdict.
+     */
+    sampled?: boolean;
+  } = {},
 ): Gap[] {
+  const now = opts.now ?? Date.now();
   const registeredIsrcs = new Set(
     verifiedWorks
       .flatMap((w) => w.matchedRecordings)
@@ -104,10 +121,12 @@ export function detectUnregisteredTracks(
       const recent = Number.isFinite(releasedMs) && now - releasedMs < REGISTRATION_LAG_MS;
       gaps.push({
         kind: 'work_not_registered',
-        severity: recent ? 'warning' : 'critical',
-        detail: recent
-          ? `"${track.title}" (ISRC ${track.isrcs[0]}, released ${track.releaseDate}) has no registration found in the MLC database under ${artist.resolvedName}'s verified catalog yet. Releases this recent are often still inside the registry's normal registration and matching lag — monitor rather than treat as a confirmed leak.`
-          : `"${track.title}" (ISRC ${track.isrcs[0]}) has no registration in the MLC database under ${artist.resolvedName}'s verified catalog. 100% of its US mechanical royalties accrue as unclaimed.`,
+        severity: recent || opts.sampled ? 'warning' : 'critical',
+        detail: opts.sampled
+          ? `"${track.title}" (ISRC ${track.isrcs[0]}) was not found in the sampled MLC search. The quick preview cannot confirm absence — run the full leak scan to verify this track's registration.`
+          : recent
+            ? `"${track.title}" (ISRC ${track.isrcs[0]}, released ${track.releaseDate}) has no registration found in the MLC database under ${artist.resolvedName}'s verified catalog yet. Releases this recent are often still inside the registry's normal registration and matching lag — monitor rather than treat as a confirmed leak.`
+            : `"${track.title}" (ISRC ${track.isrcs[0]}) has no registration in the MLC database under ${artist.resolvedName}'s verified catalog. 100% of its US mechanical royalties accrue as unclaimed.`,
         evidence: evidenceFor(track.title),
       });
     }

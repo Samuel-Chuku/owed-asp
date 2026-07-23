@@ -426,13 +426,32 @@ async function main() {
     const demoKey = process.env.PAYMENT_DEMO_KEY;
     const isDemoCall = Boolean(demoKey) && request.headers['x-owed-demo'] === demoKey;
 
+    // Never charge for a call that will certainly fail: obviously invalid
+    // arguments (unknown/incomplete scanId, empty artist) skip the payment
+    // gate and receive the tool's helpful error for free.
+    const doomedCall = (() => {
+      const rpc = request.body as
+        | { method?: string; params?: { name?: string; arguments?: Record<string, unknown> } }
+        | undefined;
+      if (rpc?.method !== 'tools/call') return false;
+      const args = rpc.params?.arguments ?? {};
+      if (rpc.params?.name === 'claim_kit_generate') {
+        const job = typeof args.scanId === 'string' ? jobs.get(args.scanId) : undefined;
+        return !job || job.status !== 'complete' || job.result?.status !== 'complete';
+      }
+      if (rpc.params?.name === 'royalty_quick_check' || rpc.params?.name === 'royalty_leak_scan') {
+        return typeof args.artistName !== 'string' || args.artistName.trim() === '';
+      }
+      return false;
+    })();
+
     // Set once the SDK gate has verified AND settled this call's payment
     // on-chain — the in-band per-tool gate must then stand down, or a real
     // payer gets charged and still receives a refusal (the bug behind the
     // Jul 23 listing rejection: "results don't match capabilities").
     let paymentSettled = false;
 
-    if (!isDemoCall && paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
+    if (!isDemoCall && !doomedCall && paymentCfg.mode === 'x402' && paidToolForBody(request.body)) {
       if (sdkGate) {
         const result = await sdkGate.handle(request, paymentHeader);
         if (result.kind === 'respond') {
@@ -452,7 +471,7 @@ async function main() {
     }
 
     // Stateless mode: fresh server + transport per request, no session ids.
-    const server = buildMcpServer(paymentHeader, isDemoCall || paymentSettled);
+    const server = buildMcpServer(paymentHeader, isDemoCall || paymentSettled || doomedCall);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
     reply.hijack();
     await server.connect(transport);

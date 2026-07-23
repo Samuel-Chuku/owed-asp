@@ -15,6 +15,7 @@ export const CanonicalTrackSchema = z.object({
   isrcs: z.array(z.string()), // from MusicBrainz + Spotify
   spotifyId: z.string().optional(),
   releaseDate: z.string().optional(),
+  rank: z.number().optional(), // Deezer popularity — drives sampling order
   streams: z.array(StreamCountSchema),
 });
 export type CanonicalTrack = z.infer<typeof CanonicalTrackSchema>;

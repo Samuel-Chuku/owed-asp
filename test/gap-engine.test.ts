@@ -158,12 +158,29 @@ describe('unregistered catalog tracks', () => {
     ]);
     artist.tracks[0].releaseDate = '2025-12-05'; // ~7.5 months old
     artist.tracks[1].releaseDate = '2023-11-10';
-    const gaps = detectUnregisteredTracks(artist, [speedometer], () => evidence, now);
+    const gaps = detectUnregisteredTracks(artist, [speedometer], () => evidence, { now });
     const fresh = gaps.find((g) => g.detail.includes('Fresh Cut'))!;
     const old = gaps.find((g) => g.detail.includes('Old Miss'))!;
     expect(fresh.severity).toBe('warning');
     expect(fresh.detail).toContain('registration and matching lag');
     expect(old.severity).toBe('critical');
+  });
+
+  it('sampled previews never claim absence — warning + pointer to full scan', () => {
+    const artist = artistWith([{ title: 'Deep Cut', isrcs: ['NG0000000005'] }]);
+    const gaps = detectUnregisteredTracks(artist, [speedometer], () => evidence, {
+      sampled: true,
+    });
+    expect(gaps).toHaveLength(1);
+    expect(gaps[0].severity).toBe('warning');
+    expect(gaps[0].detail).toContain('run the full leak scan');
+  });
+
+  it('near-full registration (≥95%) downgrades work gaps to warnings', () => {
+    const nearFull = { ...speedometer, totalShares: 99.25 };
+    const gaps = detectWorkGaps(nearFull);
+    expect(gaps.find((g) => g.kind === 'partial_shares')?.severity).toBe('warning');
+    expect(gaps.find((g) => g.kind === 'writer_no_publisher')?.severity).toBe('warning');
   });
 });
 

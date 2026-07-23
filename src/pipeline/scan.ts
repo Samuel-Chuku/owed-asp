@@ -71,10 +71,16 @@ export async function runScan(
   // Spend the title budget on tracks old enough to give a determinate
   // registered/unregistered answer first; releases still inside the
   // registration-lag window can only ever come back as "monitor" warnings.
+  // Within each group, most-popular first (Deezer rank) — a sampled check
+  // should assess the songs people actually know, not obscure album cuts.
   const lagCutoff = Date.now() - REGISTRATION_LAG_MS;
   const determinate = (t: { releaseDate?: string }) =>
     !t.releaseDate || Date.parse(t.releaseDate) < lagCutoff;
-  const ordered = [...withIsrcs.filter(determinate), ...withIsrcs.filter((t) => !determinate(t))];
+  const byRank = (a: { rank?: number }, b: { rank?: number }) => (b.rank ?? 0) - (a.rank ?? 0);
+  const ordered = [
+    ...withIsrcs.filter(determinate).sort(byRank),
+    ...withIsrcs.filter((t) => !determinate(t)).sort(byRank),
+  ];
   const titles = [...new Set(ordered.map((t) => t.title))].slice(0, maxTracks);
   const artistIsrcs = new Set(withIsrcs.flatMap((t) => t.isrcs.map((i) => i.toUpperCase())));
 
@@ -129,26 +135,40 @@ export async function runScan(
       .filter((t) => t.title.toUpperCase() === title.toUpperCase())
       .flatMap((t) => t.isrcs.map((x) => x.toUpperCase()));
     if (!titleIsrcs.some((x) => coveredIsrcs.has(x))) {
-      const exactMatches = res.works
-        .filter(
-          (w) =>
-            w.title?.trim().toUpperCase() === title.toUpperCase() && !candidates.has(w.songCode),
-        )
-        // Highest artist-name signal first (display artist on embedded
-        // recordings, then writer names) so the 3-call budget lands on the
-        // works most likely to be this artist's.
-        .sort((a, b) => nameSignal(b) - nameSignal(a))
-        .slice(0, 3);
-      for (const raw of exactMatches) {
-        const { recordings } = await opts.client.fetchMatchedRecordings(raw.songCode, 1);
-        const hits = recordings
-          .map((r) => r.isrc?.toUpperCase())
-          .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
-        if (hits.length) {
-          candidates.set(raw.songCode, { raw, snapshotPath: res.snapshotPath, recordings });
-          for (const x of hits) coveredIsrcs.add(x);
-          break;
+      // Shared budget of 3 recordings fetches per title, spent on the works
+      // with the highest artist-name signal first (display artist on embedded
+      // recordings, then writer names).
+      let deepBudget = 3;
+      const deepCheck = async (works: RawWork[], snapshotPath: string): Promise<boolean> => {
+        const exactMatches = works
+          .filter(
+            (w) =>
+              w.title?.trim().toUpperCase() === title.toUpperCase() && !candidates.has(w.songCode),
+          )
+          .sort((a, b) => nameSignal(b) - nameSignal(a));
+        for (const raw of exactMatches) {
+          if (deepBudget <= 0) return false;
+          deepBudget--;
+          const { recordings } = await opts.client.fetchMatchedRecordings(raw.songCode, 1);
+          const hits = recordings
+            .map((r) => r.isrc?.toUpperCase())
+            .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
+          if (hits.length) {
+            candidates.set(raw.songCode, { raw, snapshotPath, recordings });
+            for (const x of hits) coveredIsrcs.add(x);
+            return true;
+          }
         }
+        return false;
+      };
+      let found = await deepCheck(res.works, res.snapshotPath);
+      // Full scans dig deeper: the artist's work may rank past the first 25
+      // title-search results (generic titles, mega catalogs). Quick checks
+      // skip this — latency budget.
+      const extraPages = quick ? 0 : 2;
+      for (let p = 1; !found && p <= extraPages && deepBudget > 0 && res.totalElements > p * 25; p++) {
+        const more = await opts.client.searchWorksByTitle(title, p, 25);
+        found = await deepCheck(more.works, more.snapshotPath);
       }
     }
   }
@@ -167,10 +187,15 @@ export async function runScan(
   const gaps: Gap[] = verified.flatMap((w) => detectWorkGaps(w));
   const scannedTitles = new Set(titles);
   const scannedArtist = { ...artist, tracks: withIsrcs.filter((t) => scannedTitles.has(t.title)) };
-  const unregGaps = detectUnregisteredTracks(scannedArtist, verified, (title) => ({
-    url: 'https://portal.themlc.com/search#work',
-    snapshotPath: titleSnapshots.get(title) ?? searchSnapshot,
-  }));
+  const unregGaps = detectUnregisteredTracks(
+    scannedArtist,
+    verified,
+    (title) => ({
+      url: 'https://portal.themlc.com/search#work',
+      snapshotPath: titleSnapshots.get(title) ?? searchSnapshot,
+    }),
+    { sampled: quick },
+  );
   const allGaps = [...gaps, ...unregGaps];
 
   // Step 5 — stream counts + estimates (only when a YouTube key is set).

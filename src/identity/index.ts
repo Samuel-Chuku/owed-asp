@@ -125,7 +125,10 @@ export async function fetchDeezerCatalog(
   }
   albums = albums.slice(0, maxAlbums);
 
-  const byTitle = new Map<string, { title: string; isrcs: Set<string>; releaseDate?: string }>();
+  const byTitle = new Map<
+    string,
+    { title: string; isrcs: Set<string>; releaseDate?: string; rank?: number }
+  >();
   for (const album of albums) {
     const tracks = await dzFetch(`/album/${album.id}/tracks?limit=100`);
     for (const t of tracks.data ?? []) {
@@ -137,12 +140,17 @@ export async function fetchDeezerCatalog(
       if (album.releaseDate && (!entry.releaseDate || album.releaseDate < entry.releaseDate)) {
         entry.releaseDate = album.releaseDate;
       }
+      // keep the highest popularity rank seen for the title
+      if (typeof t.rank === 'number' && (entry.rank === undefined || t.rank > entry.rank)) {
+        entry.rank = t.rank;
+      }
     }
   }
   return [...byTitle.values()].map((t) => ({
     title: t.title,
     isrcs: [...t.isrcs],
     releaseDate: t.releaseDate,
+    rank: t.rank,
     streams: [],
   }));
 }
@@ -160,6 +168,9 @@ export function mergeCatalogs(...lists: CanonicalTrack[][]): CanonicalTrack[] {
         existing.isrcs = [...new Set([...existing.isrcs, ...t.isrcs.map((i) => i.toUpperCase())])];
         if (t.releaseDate && (!existing.releaseDate || t.releaseDate < existing.releaseDate)) {
           existing.releaseDate = t.releaseDate;
+        }
+        if (t.rank !== undefined && (existing.rank === undefined || t.rank > existing.rank)) {
+          existing.rank = t.rank;
         }
       }
     }
