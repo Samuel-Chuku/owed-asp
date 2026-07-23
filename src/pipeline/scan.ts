@@ -110,20 +110,37 @@ export async function runScan(
     return score;
   };
   let searchSnapshot = '';
+  // Writer-name tokens for the writer-scoped rescue search: last word of the
+  // stage name and each alias (legal names — the Crown Uzamah lesson).
+  // writerFullNames is a partial match on the MLC side.
+  const writerTokens = [
+    ...new Set(
+      [artist.resolvedName, ...artist.aliases]
+        .map((n) => n.trim().split(/\s+/).at(-1)?.toLowerCase() ?? '')
+        .filter((t) => t.length >= 3),
+    ),
+  ].slice(0, quick ? 1 : 2);
+
   for (const [i, title] of titles.entries()) {
     progress(`searching MLC ${i + 1}/${titles.length}: "${title}"`);
     const res = await opts.client.searchWorksByTitle(title, 0, 25);
     searchSnapshot ||= res.snapshotPath;
     titleSnapshots.set(title, res.snapshotPath);
-    for (const raw of res.works) {
-      const hits = (raw.matchedRecordings?.recordings ?? [])
-        .map((r) => r.isrc?.toUpperCase())
-        .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
-      if (hits.length && !candidates.has(raw.songCode)) {
-        candidates.set(raw.songCode, { raw, snapshotPath: res.snapshotPath });
+
+    // Cheap pass: any work whose embedded (first-10) recordings intersect the
+    // artist's ISRCs becomes a candidate immediately.
+    const absorb = (works: RawWork[], snapshotPath: string) => {
+      for (const raw of works) {
+        const hits = (raw.matchedRecordings?.recordings ?? [])
+          .map((r) => r.isrc?.toUpperCase())
+          .filter((x): x is string => Boolean(x) && artistIsrcs.has(x!));
+        if (hits.length && !candidates.has(raw.songCode)) {
+          candidates.set(raw.songCode, { raw, snapshotPath });
+        }
+        for (const x of hits) coveredIsrcs.add(x);
       }
-      for (const x of hits) coveredIsrcs.add(x);
-    }
+    };
+    absorb(res.works, res.snapshotPath);
 
     // Deep check: the search result embeds only a work's first 10 matched
     // recordings, so big works (mega-artist catalogs, heavily covered songs)
@@ -161,14 +178,25 @@ export async function runScan(
         }
         return false;
       };
+      const covered = () => titleIsrcs.some((x) => coveredIsrcs.has(x));
       let found = await deepCheck(res.works, res.snapshotPath);
-      // Full scans dig deeper: the artist's work may rank past the first 25
-      // title-search results (generic titles, mega catalogs). Quick checks
-      // skip this — latency budget.
+      // Writer-scoped rescue: re-search the title scoped to the artist's
+      // writer name (works search accepts writerFullNames — captured from the
+      // portal UI Jul 23). Far more precise than paging generic-title
+      // results; this is how "SYMMETRY" surfaces from 1,211 same-title works.
+      for (const token of writerTokens) {
+        if (found || deepBudget <= 0) break;
+        const scoped = await opts.client.searchWorksByTitle(title, 0, 25, token);
+        absorb(scoped.works, scoped.snapshotPath);
+        found = covered() || (await deepCheck(scoped.works, scoped.snapshotPath));
+      }
+      // Full scans also page deeper into the unscoped title results as a
+      // last resort. Quick checks skip this — latency budget.
       const extraPages = quick ? 0 : 2;
       for (let p = 1; !found && p <= extraPages && deepBudget > 0 && res.totalElements > p * 25; p++) {
         const more = await opts.client.searchWorksByTitle(title, p, 25);
-        found = await deepCheck(more.works, more.snapshotPath);
+        absorb(more.works, more.snapshotPath);
+        found = covered() || (await deepCheck(more.works, more.snapshotPath));
       }
     }
   }

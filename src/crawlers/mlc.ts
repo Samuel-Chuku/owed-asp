@@ -97,10 +97,20 @@ export class MlcClient {
     mkdirSync(opts.cacheDir, { recursive: true });
   }
 
-  async searchWorksByTitle(title: string, page = 0, size = 25): Promise<WorkSearchResult> {
+  async searchWorksByTitle(
+    title: string,
+    page = 0,
+    size = 25,
+    /** Scope to a writer name (partial match) — captured from the portal UI Jul 23. */
+    writerFullNames?: string,
+  ): Promise<WorkSearchResult> {
     const url = `${API}/api2v/public/search/works?page=${page}&size=${size}`;
-    const body = JSON.stringify({ combinedTitles: title });
-    const { json, snapshotPath } = await this.request('POST', url, body, `search_${slug(title)}_p${page}`);
+    const body = JSON.stringify({
+      combinedTitles: title,
+      ...(writerFullNames ? { writerFullNames } : {}),
+    });
+    const label = `search_${slug(title)}${writerFullNames ? `_w-${slug(writerFullNames)}` : ''}_p${page}`;
+    const { json, snapshotPath } = await this.request('POST', url, body, label);
     return {
       totalElements: json.totalElements ?? 0,
       works: (json.content ?? []) as RawWork[],
